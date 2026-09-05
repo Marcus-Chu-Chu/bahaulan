@@ -30,7 +30,12 @@ models:
       - name: river_discharge
         tests:
           - accepted_range: {min_value: 0}
+      - name: source
+        tests:
+          - accepted_values: {values: ['past', 'forecast']}
   - name: mart_monthly_normal
     columns:
       - name: total_mm
+        tests: [not_null]
+      - name: days_covered
         tests: [not_null]

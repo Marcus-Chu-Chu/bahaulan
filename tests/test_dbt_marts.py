@@ -2,6 +2,7 @@ from datetime import date
 from pathlib import Path
 
 import duckdb
+import pytest
 
 from pipeline.dbt_runner import run_dbt
 from pipeline.load import load_all
@@ -55,4 +56,39 @@ def test_marts_build(tmp_path):
     assert src[date(2026, 8, 30)] == "observed" and src[date(2026, 9, 3)] == "forecast"
     assert con.execute("select count(*) from mart_monthly_normal").fetchone()[0] >= 1
     assert con.execute("select count(*) from fct_river_grid_daily").fetchone()[0] == 4
+
+    cols = [r[0] for r in con.execute("describe fct_warnings_hourly").fetchall()]
+    assert cols == ["run_date", "grid_id", "ts", "date", "mm_per_hour", "warning_level"]
+
+    cols = [r[0] for r in con.execute("describe fct_river_grid_daily").fetchall()]
+    assert cols == [
+        "run_date",
+        "grid_id",
+        "date",
+        "source",
+        "river_discharge",
+        "river_discharge_max",
+        "cities_served",
+    ]
+
+    cols = [r[0] for r in con.execute("describe mart_monthly_normal").fetchall()]
+    assert cols == [
+        "year",
+        "month",
+        "month_start",
+        "total_mm",
+        "normal_mm",
+        "p10_mm",
+        "p90_mm",
+        "is_current_year",
+        "days_covered",
+        "is_complete",
+    ]
+
+    # g0502 rain_3d_mm on 2026-08-27 sums the 3-day window ending that date: 08-25, 08-26, 08-27
+    rain_3d = con.execute(
+        "select rain_3d_mm from int_rain_rolling where grid_id='g0502' and date=date '2026-08-27'"
+    ).fetchone()[0]
+    assert rain_3d == pytest.approx(7.0 + 17.2 + 40.9)
+
     con.close()
