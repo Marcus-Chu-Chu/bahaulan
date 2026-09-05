@@ -1,0 +1,8 @@
+bahaulan:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('BAHAULAN_DB', 'data/bahaulan.duckdb') }}"
+      threads: 1
+      keep_open: false

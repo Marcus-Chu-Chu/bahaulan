@@ -1,0 +1,34 @@
+name: bahaulan
+version: "1.0.0"
+config-version: 2
+profile: bahaulan
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+target-path: "target"
+log-path: "logs"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  bahaulan:
+    +materialized: table
+    staging:
+      +materialized: view
+
+seeds:
+  bahaulan:
+    dim_barangay:
+      +column_types:
+        pcode: varchar
+        name: varchar
+        city: varchar
+        grid_id: varchar
+        population: bigint
+        rank_ncr: integer
+        est_pop_exposed_25: bigint
+        score: double
+        pct_area_mh_25: double
+        lat: double
+        lon: double

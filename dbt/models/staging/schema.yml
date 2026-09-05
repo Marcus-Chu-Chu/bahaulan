@@ -1,0 +1,39 @@
+version: 2
+seeds:
+  - name: dim_barangay
+    columns:
+      - name: pcode
+        tests: [unique, not_null]
+      - name: grid_id
+        tests: [not_null]
+      - name: score
+        tests:
+          - accepted_range: {min_value: 0, max_value: 100}
+models:
+  - name: stg_forecast_daily
+    columns:
+      - name: row_key
+        tests: [unique, not_null]
+      - name: precipitation_sum
+        tests:
+          - accepted_range: {min_value: 0, max_value: 500}
+  - name: stg_forecast_hourly
+    columns:
+      - name: row_key
+        tests: [unique, not_null]
+      - name: precipitation
+        tests:
+          - accepted_range: {min_value: 0, max_value: 200}
+  - name: stg_flood_daily
+    columns:
+      - name: row_key
+        tests: [unique, not_null]
+      - name: river_discharge
+        tests:
+          - accepted_range: {min_value: 0}
+  - name: stg_archive_daily
+    columns:
+      - name: row_key
+        tests: [unique, not_null]
+      - name: precipitation_sum
+        tests: [not_null]
