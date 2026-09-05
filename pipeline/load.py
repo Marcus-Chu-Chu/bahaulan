@@ -1,4 +1,15 @@
-"""Flatten raw Open-Meteo snapshots and rebuild the DuckDB `raw` schema from all of them."""
+"""Flatten raw Open-Meteo snapshots and rebuild the DuckDB `raw` schema from all of them.
+
+Clock bases:
+- ``forecast_daily.date`` and ``forecast_hourly.ts`` are Asia/Manila local
+  (the forecast request passes ``timezone=Asia/Manila``).
+- ``flood_daily.date`` is a GMT calendar day (the flood API accepts no
+  timezone parameter; daily discharge is a daily aggregate, so the 8-hour
+  Manila offset is immaterial for day-level joins).
+- ``archive_daily.date`` is Asia/Manila local (the archive request also
+  passes ``timezone=Asia/Manila``).
+- ``fetched_at`` is naive UTC everywhere.
+"""
 
 from __future__ import annotations
 
@@ -53,6 +64,7 @@ def _duck_type(col: str) -> str:
 
 
 def _fetched_at(payload: dict) -> pd.Timestamp:
+    # fetched_at is recorded in fetch.py as datetime.now(UTC).isoformat(); normalize to naive UTC.
     return pd.Timestamp(payload["fetched_at"]).tz_convert(None)
 
 
@@ -61,6 +73,13 @@ def _daily_rows(payload: dict, fields: list[str], with_run_date: bool) -> list[d
     fa = _fetched_at(payload)
     for pt in payload["points"]:
         daily = pt["response"]["daily"]
+        n = len(daily["time"])
+        for f in fields:
+            if len(daily[f]) != n:
+                raise ValueError(
+                    f"grid_id={pt['grid_id']!r}: field {f!r} has length {len(daily[f])}, "
+                    f"expected {n} to match daily.time"
+                )
         for i, day in enumerate(daily["time"]):
             row = {"grid_id": pt["grid_id"], "date": day, "fetched_at": fa}
             if with_run_date:
@@ -102,6 +121,7 @@ def flatten_forecast(payload: dict) -> tuple[pd.DataFrame, pd.DataFrame]:
     fa = _fetched_at(payload)
     for pt in payload["points"]:
         hourly = pt["response"]["hourly"]
+        # strict=True: fail loudly rather than silently truncate on a length mismatch.
         for ts, mm in zip(hourly["time"], hourly["precipitation"], strict=True):
             hrows.append(
                 {
@@ -149,7 +169,11 @@ def _create(con: duckdb.DuckDBPyConnection, name: str, df: pd.DataFrame, cols: l
 
 def load_all(raw_dir: Path = config.RAW_DIR, db_path: Path = config.DB_PATH) -> dict[str, int]:
     fd, fh, fl, ar = [], [], [], []
-    for run_dir in sorted(p for p in raw_dir.iterdir() if p.is_dir() and p.name != "archive"):
+    if raw_dir.exists():
+        run_dirs = sorted(p for p in raw_dir.iterdir() if p.is_dir() and p.name != "archive")
+    else:
+        run_dirs = []
+    for run_dir in run_dirs:
         f_path, l_path = run_dir / "forecast.json", run_dir / "flood.json"
         if f_path.exists():
             d, h = flatten_forecast(_read(f_path))

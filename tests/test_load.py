@@ -1,7 +1,11 @@
+import copy
 import json
+import shutil
+from datetime import datetime
 from pathlib import Path
 
 import duckdb
+import pytest
 
 from pipeline.load import flatten_archive, flatten_flood, flatten_forecast, load_all
 
@@ -17,6 +21,13 @@ def test_flatten_forecast_daily_and_hourly():
     assert row.precipitation_sum == 12.5
     assert daily.precipitation_sum.isna().sum() == 1
     assert hourly.precipitation.max() == 31.0
+
+
+def test_flatten_forecast_rejects_misaligned_daily_arrays():
+    payload = copy.deepcopy(json.loads((FIX / "2026-09-04" / "forecast.json").read_text()))
+    payload["points"][0]["response"]["daily"]["precipitation_sum"].append(99.0)
+    with pytest.raises(ValueError):
+        flatten_forecast(payload)
 
 
 def test_flatten_flood_and_archive():
@@ -44,3 +55,48 @@ def test_load_all_with_no_archive_creates_empty_table(tmp_path):
         (raw / "2026-09-04" / name).write_text((FIX / "2026-09-04" / name).read_text())
     counts = load_all(raw_dir=raw, db_path=tmp_path / "e.duckdb")
     assert counts["archive_daily"] == 0
+
+
+def test_load_all_missing_raw_dir_creates_empty_tables(tmp_path):
+    counts = load_all(raw_dir=tmp_path / "does-not-exist", db_path=tmp_path / "m.duckdb")
+    assert counts == {"forecast_daily": 0, "forecast_hourly": 0, "flood_daily": 0, "archive_daily": 0}
+    con = duckdb.connect(str(tmp_path / "m.duckdb"), read_only=True)
+    types = dict(
+        con.execute(
+            "select column_name, data_type from information_schema.columns "
+            "where table_schema='raw' and table_name='forecast_daily'"
+        ).fetchall()
+    )
+    assert types == {
+        "run_date": "DATE",
+        "grid_id": "VARCHAR",
+        "date": "DATE",
+        "precipitation_sum": "DOUBLE",
+        "precipitation_probability_max": "DOUBLE",
+        "precipitation_hours": "DOUBLE",
+        "fetched_at": "TIMESTAMP",
+    }
+    con.close()
+
+
+def test_load_all_accumulates_runs_and_is_idempotent(tmp_path):
+    raw = tmp_path / "raw"
+    shutil.copytree(FIX, raw)
+    second = raw / "2026-09-05"
+    second.mkdir()
+    for name in ("forecast.json", "flood.json"):
+        text = (FIX / "2026-09-04" / name).read_text().replace(
+            '"run_date":"2026-09-04"', '"run_date":"2026-09-05"'
+        )
+        (second / name).write_text(text)
+
+    db = tmp_path / "acc.duckdb"
+    expected = {"forecast_daily": 8, "forecast_hourly": 16, "flood_daily": 8, "archive_daily": 12}
+    for _ in range(2):
+        counts = load_all(raw_dir=raw, db_path=db)
+        assert counts == expected
+
+    con = duckdb.connect(str(db), read_only=True)
+    fetched_at = con.execute("select fetched_at from raw.forecast_daily limit 1").fetchone()[0]
+    assert fetched_at == datetime(2026, 9, 3, 22, 1)
+    con.close()
