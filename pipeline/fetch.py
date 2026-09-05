@@ -27,7 +27,8 @@ def _get(url: str, params: dict) -> list | dict:
             last = f"HTTP {resp.status_code}: {resp.text[:200]}"
         except requests.RequestException as exc:
             last = repr(exc)
-        time.sleep(2**attempt)
+        if attempt < config.HTTP_RETRIES - 1:
+            time.sleep(2**attempt)
     raise FetchError(f"{url} failed after {config.HTTP_RETRIES} attempts: {last}")
 
 
@@ -96,8 +97,10 @@ def _write_json(path: Path, payload: dict) -> None:
 
 def fetch_daily(run_date: date, points: list[GridPoint], raw_dir: Path = config.RAW_DIR) -> Path:
     out = raw_dir / run_date.isoformat()
-    _write_json(out / "forecast.json", _wrap("forecast", run_date, _multi(config.FORECAST_URL, points, forecast_params())))
-    _write_json(out / "flood.json", _wrap("flood", run_date, _multi(config.FLOOD_URL, points, flood_params())))
+    forecast_pairs = _multi(config.FORECAST_URL, points, forecast_params())
+    _write_json(out / "forecast.json", _wrap("forecast", run_date, forecast_pairs))
+    flood_pairs = _multi(config.FLOOD_URL, points, flood_params())
+    _write_json(out / "flood.json", _wrap("flood", run_date, flood_pairs))
     return out
 
 

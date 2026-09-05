@@ -2,15 +2,23 @@ import json
 from datetime import date
 
 import pytest
+import requests
 
-from pipeline import fetch
+from pipeline import config, fetch
 from pipeline.grid import GridPoint
 
 P = [GridPoint("g0000", 14.35, 120.9), GridPoint("g0001", 14.35, 120.95)]
 
 
 def _fake_response(n):
-    return [{"latitude": 14.35, "longitude": 120.9, "daily": {"time": ["2026-09-05"], "precipitation_sum": [1.0]}} for _ in range(n)]
+    return [
+        {
+            "latitude": 14.35,
+            "longitude": 120.9,
+            "daily": {"time": ["2026-09-05"], "precipitation_sum": [1.0]},
+        }
+        for _ in range(n)
+    ]
 
 
 def test_fetch_daily_writes_two_snapshots(tmp_path, monkeypatch):
@@ -30,6 +38,36 @@ def test_fetch_daily_writes_two_snapshots(tmp_path, monkeypatch):
     assert (out / "flood.json").exists()
     assert calls[0][1]["latitude"] == "14.35,14.35"
     assert calls[0][1]["timezone"] == "Asia/Manila"
+
+
+def test_get_retries_then_raises(monkeypatch):
+    calls = []
+    sleeps = []
+
+    def fake_get(url, params, timeout=None):
+        calls.append((url, params))
+        raise requests.ConnectionError("boom")
+
+    monkeypatch.setattr(fetch.requests, "get", fake_get)
+    monkeypatch.setattr(fetch.time, "sleep", lambda s: sleeps.append(s))
+
+    with pytest.raises(fetch.FetchError):
+        fetch._get("http://x", {})
+
+    assert len(calls) == config.HTTP_RETRIES
+    assert sleeps == [1, 2]
+
+
+def test_get_raises_on_non_200(monkeypatch):
+    class FakeResponse:
+        status_code = 500
+        text = "boom"
+
+    monkeypatch.setattr(fetch.requests, "get", lambda url, params, timeout=None: FakeResponse())
+    monkeypatch.setattr(fetch.time, "sleep", lambda s: None)
+
+    with pytest.raises(fetch.FetchError, match="HTTP 500"):
+        fetch._get("http://x", {})
 
 
 def test_multi_raises_on_count_mismatch(monkeypatch):
