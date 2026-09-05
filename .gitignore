@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+data/bahaulan.duckdb
+data/bahaulan.duckdb.wal
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+exports/*.hyper
+exports/*.parquet
+.superpowers/
+.env

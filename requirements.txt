@@ -1,0 +1,6 @@
+requests>=2.32
+pandas>=2.2
+pyarrow>=17
+dbt-core>=1.9,<2
+dbt-duckdb>=1.9,<2
+tableauhyperapi>=0.0.20
