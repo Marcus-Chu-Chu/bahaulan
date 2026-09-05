@@ -22,6 +22,11 @@ def run_dbt(
     args = [command, "--project-dir", str(config.DBT_DIR), "--profiles-dir", str(config.DBT_DIR), "--no-use-colors"]
     if select:
         args += ["--select", select]
+        # Cautious indirect selection: a generic test (e.g. a cross-model `relationships`
+        # test) is only pulled in when ALL of its parent nodes are within --select, not
+        # merely one. Without this, selecting an upstream model alone can drag in a test
+        # that also depends on an unbuilt downstream model and fail spuriously.
+        args += ["--indirect-selection", "cautious"]
     if exclude:
         args += ["--exclude", exclude]
     try:

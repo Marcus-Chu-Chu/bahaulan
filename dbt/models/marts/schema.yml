@@ -1,0 +1,36 @@
+version: 2
+models:
+  - name: fct_rain_barangay_daily
+    columns:
+      - name: row_key
+        tests: [unique, not_null]
+      - name: pcode
+        tests:
+          - relationships: {to: ref('dim_barangay'), field: pcode}
+      - name: source
+        tests:
+          - accepted_values: {values: ['observed', 'forecast']}
+      - name: rain_3d_mm
+        tests:
+          - accepted_range: {min_value: 0}
+  - name: mart_dashboard
+    columns:
+      - name: wet_exposure
+        tests: [not_null]
+      - name: warning_level
+        tests:
+          - accepted_values: {values: ['none', 'yellow', 'orange', 'red']}
+  - name: fct_warnings_hourly
+    columns:
+      - name: warning_level
+        tests:
+          - accepted_values: {values: ['none', 'yellow', 'orange', 'red']}
+  - name: fct_river_grid_daily
+    columns:
+      - name: river_discharge
+        tests:
+          - accepted_range: {min_value: 0}
+  - name: mart_monthly_normal
+    columns:
+      - name: total_mm
+        tests: [not_null]
