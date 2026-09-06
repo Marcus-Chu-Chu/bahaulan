@@ -49,7 +49,7 @@ def _dates_to_iso(df: pd.DataFrame) -> pd.DataFrame:
     out = df.copy()
     for c in out.columns:
         if pd.api.types.is_datetime64_any_dtype(out[c]):
-            if (out[c].dt.normalize() == out[c]).all():
+            if ((out[c].dt.normalize() == out[c]) | out[c].isna()).all():
                 out[c] = out[c].dt.strftime("%Y-%m-%d")
             else:
                 out[c] = out[c].dt.strftime("%Y-%m-%dT%H:%M:%S")
@@ -58,13 +58,43 @@ def _dates_to_iso(df: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
+def _hyper_type(s: pd.Series) -> tuple[object, pd.Series]:
+    """Decide the Hyper SqlType for a column and return (SqlType, converted series).
+
+    Null-safe: a datetime column with some NaT values is still classified as
+    DATE (not TIMESTAMP) if every non-null value falls on midnight. An object
+    (or nullable ``boolean`` extension) column whose non-null values are all
+    Python ``bool`` is classified as BOOL rather than TEXT.
+    """
+    from tableauhyperapi import SqlType
+
+    if pd.api.types.is_datetime64_any_dtype(s):
+        if ((s.dt.normalize() == s) | s.isna()).all():
+            return SqlType.date(), s.dt.date
+        return SqlType.timestamp(), s.dt.to_pydatetime()
+    if pd.api.types.is_bool_dtype(s):
+        return SqlType.bool(), s
+    if pd.api.types.is_integer_dtype(s):
+        return SqlType.big_int(), s
+    if pd.api.types.is_float_dtype(s):
+        return SqlType.double(), s
+
+    non_null = s[s.notna()]
+    if (s.dtype == object or str(s.dtype) == "boolean") and len(non_null) and non_null.map(
+        lambda v: isinstance(v, bool)
+    ).all():
+        return SqlType.bool(), s
+    if len(non_null) and isinstance(non_null.iloc[0], date):
+        return SqlType.date(), s
+    return SqlType.text(), s.astype("string")
+
+
 def write_hyper(df: pd.DataFrame, path: Path, table_name: str = "dashboard") -> None:
     from tableauhyperapi import (
         Connection,
         CreateMode,
         HyperProcess,
         Inserter,
-        SqlType,
         TableDefinition,
         TableName,
         Telemetry,
@@ -73,29 +103,16 @@ def write_hyper(df: pd.DataFrame, path: Path, table_name: str = "dashboard") -> 
     cols = []
     frame = df.copy()
     for c in frame.columns:
-        s = frame[c]
-        if pd.api.types.is_datetime64_any_dtype(s):
-            if (s.dt.normalize() == s).all():
-                frame[c] = s.dt.date
-                cols.append(TableDefinition.Column(c, SqlType.date()))
-            else:
-                frame[c] = s.dt.to_pydatetime()
-                cols.append(TableDefinition.Column(c, SqlType.timestamp()))
-        elif pd.api.types.is_bool_dtype(s):
-            cols.append(TableDefinition.Column(c, SqlType.bool()))
-        elif pd.api.types.is_integer_dtype(s):
-            cols.append(TableDefinition.Column(c, SqlType.big_int()))
-        elif pd.api.types.is_float_dtype(s):
-            cols.append(TableDefinition.Column(c, SqlType.double()))
-        elif len(s) and isinstance(s.dropna().iloc[0] if s.notna().any() else None, date):
-            cols.append(TableDefinition.Column(c, SqlType.date()))
-        else:
-            frame[c] = s.astype("string")
-            cols.append(TableDefinition.Column(c, SqlType.text()))
+        sql_type, converted = _hyper_type(frame[c])
+        frame[c] = converted
+        cols.append(TableDefinition.Column(c, sql_type))
     frame = frame.astype(object).where(frame.notna(), None)
     table = TableDefinition(TableName(table_name), cols)
     path.parent.mkdir(parents=True, exist_ok=True)
-    with HyperProcess(telemetry=Telemetry.DO_NOT_SEND_USAGE_DATA_TO_TABLEAU) as hp:
+    with HyperProcess(
+        telemetry=Telemetry.DO_NOT_SEND_USAGE_DATA_TO_TABLEAU,
+        parameters={"log_dir": str(path.parent)},
+    ) as hp:
         with Connection(hp.endpoint, str(path), CreateMode.CREATE_AND_REPLACE) as con:
             con.catalog.create_table(table)
             with Inserter(con, table) as ins:
@@ -146,4 +163,13 @@ def export_all(
         "note": NOTE,
     }
     (export_dir / "metadata.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
-    return {"dashboard_rows": int(len(dash)), "files": sorted(p.name for p in export_dir.iterdir())}
+    written = [
+        "dashboard.csv",
+        "dashboard.parquet",
+        "dashboard.hyper",
+        "warnings.csv",
+        "river.csv",
+        "monthly_normal.csv",
+        "metadata.json",
+    ]
+    return {"dashboard_rows": int(len(dash)), "files": sorted(written)}
