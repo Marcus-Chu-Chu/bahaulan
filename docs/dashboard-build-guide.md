@@ -14,7 +14,7 @@ The daily run attaches seven files to the `latest` release. Each has a stable UR
 | `dashboard.csv` | 63,270 rows, 21 columns: 1,710 barangays over a 37-day window |
 | `dashboard.hyper` | The same rows as a Tableau extract, one table named `dashboard` |
 | `dashboard.parquet` | The same rows as Parquet |
-| `warnings.csv` | Every forecast hour of the current run, one row per grid point per hour |
+| `warnings.csv` | Every hour of the current run's window, 7 past days plus 7 forecast days, one row per grid point per hour |
 | `river.csv` | GloFAS river discharge per grid point per day |
 | `monthly_normal.csv` | Monthly NCR rainfall against the 2020 to 2025 normal |
 | `metadata.json` | One object describing the run |
@@ -77,6 +77,14 @@ Double-click the `Sheet 1` tab and rename it to `Exposure map`.
 6. Drag `source` to the Filters shelf, tick `forecast` only, and click OK.
 7. Drag `date` to the Filters shelf. Choose `Relative dates`, then `Days`, then `Next`, and set
    the count to 3. Click OK.
+
+A relative filter resolves against the viewer's clock, not against the data. Tableau Public does
+not refresh a workbook on its own, so once the published copy is more than a few days past its
+last republish, `Next 3 days` matches no rows and the map goes empty. Two ways to avoid that.
+Read `run_date` from the data, then filter `date` on a fixed `Range of dates` covering `run_date`
+through `run_date` plus 2. Or keep the `source = forecast` filter and pick the first three
+forecast dates from the list. Either way, republish the workbook after each pipeline refresh so
+the dates move forward with the data.
 8. Drag `name`, `city`, `rain_3d_mm`, `warning_level` and `est_pop_exposed_25` onto `Tooltip`.
    Click `Tooltip` to reword the text if you want.
 
@@ -257,6 +265,11 @@ the value column. Close & Apply, then add one `Card` visual each for `run_date`,
 
 Click a blank part of the canvas, pick the `Slicer` visual, and drag `city` into `Field`. Leave
 it as a list, or switch it to a dropdown in the `Format` pane under `Slicer settings`.
+
+This slicer is on `city`, so the Part A step 3 caveat does not bite here. If you add a `date`
+slicer and set it to `Relative`, the same problem applies: the window resolves against the
+viewer's clock, and a report whose data has not refreshed shows nothing. Use `Between` with a
+fixed range, or filter on `source` instead.
 
 Open the `Format` pane with nothing selected, choose `Canvas settings`, set `Type` to `Custom`,
 and enter `1280` by `720`.

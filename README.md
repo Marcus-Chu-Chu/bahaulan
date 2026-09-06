@@ -155,7 +155,8 @@ tests/          pytest suite with offline fixtures
 
 `data/bahaulan.duckdb`, `exports/dashboard.csv`, `exports/warnings.csv`,
 `exports/dashboard.hyper` and `exports/dashboard.parquet` are gitignored. The database is
-rebuilt on every run, and all four export files are attached to the `latest` release.
+rebuilt on every run. All seven export files are attached to the `latest` release: the four
+gitignored ones plus `river.csv`, `monthly_normal.csv` and `metadata.json`.
 
 ## Related projects
 

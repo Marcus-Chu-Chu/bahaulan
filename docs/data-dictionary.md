@@ -26,7 +26,7 @@ Hyper file has a single table named `dashboard`.
 | Column | Type | Unit | Definition |
 |---|---|---|---|
 | `date` | date | Manila day | The day the weather values describe. |
-| `source` | text | | `observed` if the value came from the ERA5 archive, `forecast` if it came from a forecast run. ERA5 trails real time by about 5 days, so the most recent past days are labelled `forecast` even though they are behind the run date. |
+| `source` | text | | `observed` if the value came from the ERA5 archive, `forecast` if it came from a forecast run. ERA5 trails real time by about 5 days, so the most recent past days are labeled `forecast` even though they are behind the run date. |
 | `pcode` | text | | PSGC barangay code, the primary key of `dim_barangay`. |
 | `name` | text | | Barangay name as published in the PSGC. |
 | `city` | text | | City or municipality, one of the 17 in the National Capital Region. |
@@ -37,7 +37,7 @@ Hyper file has a single table named `dashboard`.
 | `grid_id` | text | | Id of the nearest Open-Meteo grid point, on a 0.05 degree lattice over the NCR bounding box. |
 | `rain_mm` | double | mm | Total rainfall for the day at that grid point. |
 | `rain_prob_max` | double | percent | Highest hourly precipitation probability the forecast gives for the day. Null for observed days, which have no probability. |
-| `rain_hours` | double | hours | Hours in the day with measurable precipitation. |
+| `rain_hours` | double | hours | Hours in the day with any non-zero modeled precipitation. In the wet season that is often most of the day: observed rows average about 20 hours and forecast rows about 22. Read it as a wetness indicator, not a count of rainy hours. |
 | `rain_3d_mm` | double | mm | Rainfall summed over this day and the two before it. |
 | `rain_7d_mm` | double | mm | Rainfall summed over this day and the six before it. |
 | `wet_exposure` | double | mm | `rain_3d_mm * score / 100`, rounded to 3 decimals. A barangay scores high only when recent rain and flood exposure are both high. |
@@ -49,8 +49,10 @@ Hyper file has a single table named `dashboard`.
 
 ## warnings.csv
 
-Every forecast hour from the current run, one row per grid point per hour. Hours where
-Open-Meteo returns a null hourly precipitation value are omitted, not included as zero.
+Every hour in the current run's hourly window, one row per grid point per hour. The window
+is 7 past days plus 7 forecast days, about 14 days, so most rows are past hours rather than
+forecast hours. Hours where Open-Meteo returns a null hourly precipitation value are omitted,
+not included as zero.
 
 | Column | Type | Unit | Definition |
 |---|---|---|---|
