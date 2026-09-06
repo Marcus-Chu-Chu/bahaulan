@@ -1,0 +1,3 @@
+run_date,started_at_utc,duration_s,status,forecast_rows,flood_rows,archive_rows,dashboard_rows,gates
+2026-09-06,2026-09-06T00:33:57+00:00,14.7,fetch_failed,,,,,"fetch_error(https://archive-api.open-meteo.com/v1/archive failed after 3 attempts: HTTP 429: {""error"":true,""reason"":""Minutely API request limit exceeded. Please try again in one minute.""})"
+2026-09-06,2026-09-06T00:35:40+00:00,19.1,ok,248,248,75516,58140,freshness=pass;coverage=pass;null_share=pass;ranges=pass

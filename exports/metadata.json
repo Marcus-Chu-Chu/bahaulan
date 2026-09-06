@@ -1,0 +1,21 @@
+{
+  "run_date": "2026-09-06",
+  "generated_at_utc": "2026-09-06T00:35:59+00:00",
+  "dashboard_rows": 58140,
+  "latest_observed_date": "2026-09-01",
+  "forecast_through": "2026-09-12",
+  "active_grid_points": 31,
+  "gates": {
+    "freshness": "pass",
+    "coverage": "pass",
+    "null_share": "pass",
+    "ranges": "pass"
+  },
+  "sources": [
+    "Open-Meteo forecast API (https://open-meteo.com), CC BY 4.0",
+    "Open-Meteo flood API, GloFAS river discharge (Copernicus Emergency Management Service)",
+    "Open-Meteo historical weather API, ERA5 reanalysis (Copernicus Climate Change Service)",
+    "BahaMap barangay exposure table (NOAH hazard maps x PSGC boundaries x 2020 census)"
+  ],
+  "note": "Rainfall and discharge are model outputs (forecasts and reanalysis), not PAGASA gauge observations."
+}
