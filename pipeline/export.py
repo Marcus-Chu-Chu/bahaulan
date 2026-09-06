@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import os
+import shutil
 from datetime import UTC, date, datetime
 from pathlib import Path
 
@@ -130,46 +132,68 @@ def export_all(
     gates: list[GateResult],
     export_dir: Path = config.EXPORT_DIR,
 ) -> dict:
-    export_dir.mkdir(parents=True, exist_ok=True)
-    dash = _df(con, "select * from mart_dashboard order by date, pcode")[DASHBOARD_COLUMNS]
-    _dates_to_iso(dash).to_csv(export_dir / "dashboard.csv", index=False)
-    dash.to_parquet(export_dir / "dashboard.parquet", index=False)
-    write_hyper(dash, export_dir / "dashboard.hyper")
+    """Write every export file, then publish them atomically.
 
-    _dates_to_iso(_df(con, "select * from fct_warnings_hourly order by grid_id, ts")).to_csv(
-        export_dir / "warnings.csv", index=False
-    )
-    _dates_to_iso(_df(con, "select * from fct_river_grid_daily order by grid_id, date")).to_csv(
-        export_dir / "river.csv", index=False
-    )
-    _dates_to_iso(_df(con, "select * from mart_monthly_normal order by year, month")).to_csv(
-        export_dir / "monthly_normal.csv", index=False
-    )
+    Everything is written into a temporary sibling directory first; only once all writes
+    have succeeded are the files moved into ``export_dir``. That way a failure partway
+    through (a bad query, a Hyper API error, disk full) never leaves ``export_dir`` holding
+    a stale mix of some-new/some-old files -- readers either see the complete previous
+    export or the complete new one, never a partial one.
+    """
+    tmp_dir = export_dir.parent / (export_dir.name + ".tmp")
+    if tmp_dir.exists():
+        shutil.rmtree(tmp_dir)
+    tmp_dir.mkdir(parents=True)
+    try:
+        dash = _df(con, "select * from mart_dashboard order by date, pcode")[DASHBOARD_COLUMNS]
+        _dates_to_iso(dash).to_csv(tmp_dir / "dashboard.csv", index=False)
+        dash.to_parquet(tmp_dir / "dashboard.parquet", index=False)
+        write_hyper(dash, tmp_dir / "dashboard.hyper")
 
-    latest_obs = con.execute(
-        "select max(date) from mart_dashboard where source = 'observed'"
-    ).fetchone()[0]
-    through = con.execute("select max(date) from mart_dashboard").fetchone()[0]
-    grids = con.execute("select count(distinct grid_id) from mart_dashboard").fetchone()[0]
-    meta = {
-        "run_date": run_date.isoformat(),
-        "generated_at_utc": datetime.now(UTC).isoformat(timespec="seconds"),
-        "dashboard_rows": int(len(dash)),
-        "latest_observed_date": str(latest_obs)[:10] if latest_obs else None,
-        "forecast_through": str(through)[:10] if through else None,
-        "active_grid_points": int(grids),
-        "gates": {g.name: "pass" if g.passed else "fail" for g in gates},
-        "sources": SOURCES,
-        "note": NOTE,
-    }
-    (export_dir / "metadata.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
-    written = [
-        "dashboard.csv",
-        "dashboard.parquet",
-        "dashboard.hyper",
-        "warnings.csv",
-        "river.csv",
-        "monthly_normal.csv",
-        "metadata.json",
-    ]
+        _dates_to_iso(_df(con, "select * from fct_warnings_hourly order by grid_id, ts")).to_csv(
+            tmp_dir / "warnings.csv", index=False
+        )
+        _dates_to_iso(_df(con, "select * from fct_river_grid_daily order by grid_id, date")).to_csv(
+            tmp_dir / "river.csv", index=False
+        )
+        _dates_to_iso(_df(con, "select * from mart_monthly_normal order by year, month")).to_csv(
+            tmp_dir / "monthly_normal.csv", index=False
+        )
+
+        latest_obs = con.execute(
+            "select max(date) from mart_dashboard where source = 'observed'"
+        ).fetchone()[0]
+        through = con.execute("select max(date) from mart_dashboard").fetchone()[0]
+        grids = con.execute("select count(distinct grid_id) from mart_dashboard").fetchone()[0]
+        meta = {
+            "run_date": run_date.isoformat(),
+            "generated_at_utc": datetime.now(UTC).isoformat(timespec="seconds"),
+            "dashboard_rows": int(len(dash)),
+            "latest_observed_date": str(latest_obs)[:10] if latest_obs else None,
+            "forecast_through": str(through)[:10] if through else None,
+            "active_grid_points": int(grids),
+            "gates": {g.name: "pass" if g.passed else "fail" for g in gates},
+            "sources": SOURCES,
+            "note": NOTE,
+        }
+        (tmp_dir / "metadata.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
+        written = [
+            "dashboard.csv",
+            "dashboard.parquet",
+            "dashboard.hyper",
+            "warnings.csv",
+            "river.csv",
+            "monthly_normal.csv",
+            "metadata.json",
+        ]
+
+        export_dir.mkdir(parents=True, exist_ok=True)
+        for name in written:
+            os.replace(tmp_dir / name, export_dir / name)
+        hyper_log = tmp_dir / "hyperd.log"
+        if hyper_log.exists():
+            os.replace(hyper_log, export_dir / "hyperd.log")
+    finally:
+        if tmp_dir.exists():
+            shutil.rmtree(tmp_dir)
     return {"dashboard_rows": int(len(dash)), "files": sorted(written)}

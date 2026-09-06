@@ -4,6 +4,7 @@ from pathlib import Path
 
 import duckdb
 import pandas as pd
+import pytest
 
 from pipeline.dbt_runner import run_dbt
 from pipeline.export import DASHBOARD_COLUMNS, export_all, write_hyper
@@ -72,7 +73,8 @@ def test_export_all_writes_contract(tmp_path):
 
     db = tmp_path / "e.duckdb"
     load_all(raw_dir=FIX, db_path=db)
-    run_dbt(db, exclude="assert_dashboard_full_coverage")
+    # See test_dbt_marts.test_marts_build: the fixture snapshots leave a calendar-date gap.
+    run_dbt(db, exclude="assert_dashboard_full_coverage assert_dashboard_date_continuity")
     con = duckdb.connect(str(db), read_only=True)
     gates = [GateResult("freshness", True, "ok"), GateResult("coverage", False, "missing")]
     info = export_all(con, date(2026, 9, 4), gates, export_dir=tmp_path / "exports")
@@ -124,3 +126,24 @@ def test_export_all_writes_contract(tmp_path):
     )
 
     assert not cwd_log.exists()
+
+
+def test_export_all_is_atomic(tmp_path, monkeypatch):
+    db = tmp_path / "e2.duckdb"
+    load_all(raw_dir=FIX, db_path=db)
+    run_dbt(db, exclude="assert_dashboard_full_coverage assert_dashboard_date_continuity")
+    con = duckdb.connect(str(db), read_only=True)
+    gates = [GateResult("freshness", True, "ok")]
+
+    def boom(*args, **kwargs):
+        raise RuntimeError("boom")
+
+    monkeypatch.setattr("pipeline.export.write_hyper", boom)
+    export_dir = tmp_path / "exports"
+    try:
+        with pytest.raises(RuntimeError):
+            export_all(con, date(2026, 9, 4), gates, export_dir=export_dir)
+    finally:
+        con.close()
+    assert not export_dir.exists() or not any(export_dir.iterdir())
+    assert not (tmp_path / "exports.tmp").exists()

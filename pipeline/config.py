@@ -23,7 +23,13 @@ FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
 FLOOD_URL = "https://flood-api.open-meteo.com/v1/flood"
 ARCHIVE_URL = "https://archive-api.open-meteo.com/v1/archive"
 FORECAST_DAYS = 7
-PAST_DAYS = 1
+# The archive (ERA5 reanalysis) endpoint trails real time by ARCHIVE_LAG_DAYS, so the most
+# recent few observed days aren't backfillable from there yet. The forecast/flood snapshot's
+# own past_days window has to reach back far enough to bridge that gap by itself, or the
+# dashboard span ends up with a hole between "last archived day" and "first forecast day".
+# Open-Meteo accepts past_days up to 92, so 7 (> ARCHIVE_LAG_DAYS) keeps every run
+# self-sufficient without depending on same-day archive availability.
+PAST_DAYS = 7
 ARCHIVE_START = "2020-01-01"
 ARCHIVE_LAG_DAYS = 5  # ERA5 reanalysis trails real time; don't ask for the last few days
 MAX_POINTS_PER_REQUEST = 30

@@ -1,4 +1,13 @@
-"""The BahaUlan DAG: fetch -> load -> quality -> dbt build -> export -> summary."""
+"""The BahaUlan DAG: fetch -> load -> quality -> dbt build -> export -> summary.
+
+The run log (``logs/runs.csv``) records one row per invocation with a ``status`` of:
+
+- ``ok``: every stage completed and exports were written.
+- ``fetch_failed``: Open-Meteo could not be reached after retries.
+- ``gate_failed``: a pre-dbt data-quality gate failed (see ``pipeline.quality``).
+- ``dbt_failed``: the dbt build (models or tests) failed.
+- ``error``: any other unexpected exception; caught so a bug never leaves a run unlogged.
+"""
 
 from __future__ import annotations
 
@@ -61,7 +70,8 @@ def append_log(path: Path, row: dict) -> None:
 def _summary(row: dict, gates_detail: list[str]) -> str:
     lines = ["## BahaUlan run", "", "| field | value |", "|---|---|"]
     lines += [f"| {k} | {row.get(k, '')} |" for k in LOG_COLUMNS if k != "gates"]
-    lines += ["", "### Gates", ""] + [f"- {g}" for g in gates_detail]
+    if gates_detail:
+        lines += ["", "### Gates", ""] + [f"- {g}" for g in gates_detail]
     return "\n".join(lines) + "\n"
 
 
@@ -69,10 +79,12 @@ def _emit(row: dict, gates_detail: list[str]) -> None:
     text = _summary(row, gates_detail)
     step = os.environ.get("GITHUB_STEP_SUMMARY")
     if step:
-        Path(step).open("a", encoding="utf-8").write(text)
+        with Path(step).open("a", encoding="utf-8") as fh:
+            fh.write(text)
     env = os.environ.get("GITHUB_ENV")
     if env:
-        Path(env).open("a", encoding="utf-8").write(f"RUN_DATE={row['run_date']}\n")
+        with Path(env).open("a", encoding="utf-8") as fh:
+            fh.write(f"RUN_DATE={row['run_date']}\n")
     print(text)
 
 
@@ -96,40 +108,48 @@ def run(
         _emit(row, gates_detail)
         return 0 if status == "ok" else 1
 
-    if not offline:
+    try:
+        if not offline:
+            try:
+                fetch_daily(run_date, points, raw_dir=raw_dir)
+                fetch_archive_if_needed(run_date, points, archive_dir=raw_dir / "archive")
+            except FetchError as exc:
+                row["gates"] = f"fetch_error({exc})"
+                return finish("fetch_failed")
+
+        counts = load_all(raw_dir=raw_dir, db_path=db_path)
+        row.update(
+            forecast_rows=counts["forecast_daily"],
+            flood_rows=counts["flood_daily"],
+            archive_rows=counts["archive_daily"],
+        )
+
+        con = duckdb.connect(str(db_path))
         try:
-            fetch_daily(run_date, points, raw_dir=raw_dir)
-            fetch_archive_if_needed(run_date, points, archive_dir=raw_dir / "archive")
-        except FetchError as exc:
-            row["gates"] = f"fetch_error({exc})"
-            return finish("fetch_failed")
+            gates = run_gates(con, run_date, [p.grid_id for p in points])
+        finally:
+            con.close()
+        row["gates"] = format_gates(gates)
+        gates_detail = [f"{g.name}: {'PASS' if g.passed else 'FAIL'} ({g.detail})" for g in gates]
+        if not all_passed(gates):
+            return finish("gate_failed")
 
-    counts = load_all(raw_dir=raw_dir, db_path=db_path)
-    row.update(forecast_rows=counts["forecast_daily"], flood_rows=counts["flood_daily"], archive_rows=counts["archive_daily"])
+        try:
+            run_dbt(db_path)
+        except RuntimeError as exc:
+            row["gates"] += f";dbt=fail({exc})"
+            return finish("dbt_failed")
 
-    con = duckdb.connect(str(db_path))
-    try:
-        gates = run_gates(con, run_date, [p.grid_id for p in points])
-    finally:
-        con.close()
-    row["gates"] = format_gates(gates)
-    gates_detail = [f"{g.name}: {'PASS' if g.passed else 'FAIL'} ({g.detail})" for g in gates]
-    if not all_passed(gates):
-        return finish("gate_failed")
-
-    try:
-        run_dbt(db_path)
-    except RuntimeError as exc:
-        row["gates"] += f";dbt=fail({exc})"
-        return finish("dbt_failed")
-
-    con = duckdb.connect(str(db_path), read_only=True)
-    try:
-        info = export_all(con, run_date, gates, export_dir=export_dir)
-    finally:
-        con.close()
-    row["dashboard_rows"] = info["dashboard_rows"]
-    return finish("ok")
+        con = duckdb.connect(str(db_path), read_only=True)
+        try:
+            info = export_all(con, run_date, gates, export_dir=export_dir)
+        finally:
+            con.close()
+        row["dashboard_rows"] = info["dashboard_rows"]
+        return finish("ok")
+    except Exception as exc:  # noqa: BLE001 -- the orchestrator's job is to record every failure, however it happens, as a log row rather than an unhandled traceback
+        row["gates"] = f"error({type(exc).__name__}: {exc})"
+        return finish("error")
 
 
 def main(argv: list[str] | None = None) -> int:

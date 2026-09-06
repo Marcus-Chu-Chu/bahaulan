@@ -13,9 +13,10 @@ FIX = Path(__file__).parent / "fixtures" / "raw"
 def test_marts_build(tmp_path):
     db = tmp_path / "m.duckdb"
     load_all(raw_dir=FIX, db_path=db)
-    # Full build: fixture dashboard coverage test is expected to FAIL (only 2 grid points), so
-    # build everything except that singular test.
-    run_dbt(db, exclude="assert_dashboard_full_coverage")
+    # Full build: fixture dashboard coverage test is expected to FAIL (only 2 grid points), and
+    # the fixture's archive (08-25..08-30) and forecast (09-03..09-04) snapshots leave a
+    # calendar-date gap (08-31..09-02), so exclude both singular tests that would fail on it.
+    run_dbt(db, exclude="assert_dashboard_full_coverage assert_dashboard_date_continuity")
 
     con = duckdb.connect(str(db), read_only=True)
     cols = [r[0] for r in con.execute("describe mart_dashboard").fetchall()]

@@ -1,4 +1,10 @@
 run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
+2026-09-06,g0003,2026-08-30,past,2.71,6.4,Muntinlupa
+2026-09-06,g0003,2026-08-31,past,2.15,3.55,Muntinlupa
+2026-09-06,g0003,2026-09-01,past,1.31,1.39,Muntinlupa
+2026-09-06,g0003,2026-09-02,past,1.02,1.08,Muntinlupa
+2026-09-06,g0003,2026-09-03,past,0.75,1.46,Muntinlupa
+2026-09-06,g0003,2026-09-04,past,0.62,2.39,Muntinlupa
 2026-09-06,g0003,2026-09-05,past,0.66,2.61,Muntinlupa
 2026-09-06,g0003,2026-09-06,forecast,3.19,8.27,Muntinlupa
 2026-09-06,g0003,2026-09-07,forecast,1.76,4.11,Muntinlupa
@@ -7,6 +13,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0003,2026-09-10,forecast,7.49,35.22,Muntinlupa
 2026-09-06,g0003,2026-09-11,forecast,13.76,57.75,Muntinlupa
 2026-09-06,g0003,2026-09-12,forecast,14.31,30.99,Muntinlupa
+2026-09-06,g0102,2026-08-30,past,3.98,8.48,"Las Piñas, Muntinlupa"
+2026-09-06,g0102,2026-08-31,past,2.47,4.92,"Las Piñas, Muntinlupa"
+2026-09-06,g0102,2026-09-01,past,1.08,1.09,"Las Piñas, Muntinlupa"
+2026-09-06,g0102,2026-09-02,past,0.69,0.7,"Las Piñas, Muntinlupa"
+2026-09-06,g0102,2026-09-03,past,0.77,2.21,"Las Piñas, Muntinlupa"
+2026-09-06,g0102,2026-09-04,past,0.43,3.54,"Las Piñas, Muntinlupa"
 2026-09-06,g0102,2026-09-05,past,0.5,3.91,"Las Piñas, Muntinlupa"
 2026-09-06,g0102,2026-09-06,forecast,3.8,10.72,"Las Piñas, Muntinlupa"
 2026-09-06,g0102,2026-09-07,forecast,1.78,4.43,"Las Piñas, Muntinlupa"
@@ -15,6 +27,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0102,2026-09-10,forecast,5.24,43.57,"Las Piñas, Muntinlupa"
 2026-09-06,g0102,2026-09-11,forecast,12.68,60.66,"Las Piñas, Muntinlupa"
 2026-09-06,g0102,2026-09-12,forecast,17.11,38.17,"Las Piñas, Muntinlupa"
+2026-09-06,g0103,2026-08-30,past,110.94,123.45,Muntinlupa
+2026-09-06,g0103,2026-08-31,past,159.32,166.88,Muntinlupa
+2026-09-06,g0103,2026-09-01,past,163.44,165.72,Muntinlupa
+2026-09-06,g0103,2026-09-02,past,174.39,176.83,Muntinlupa
+2026-09-06,g0103,2026-09-03,past,171.19,176.01,Muntinlupa
+2026-09-06,g0103,2026-09-04,past,159.32,168.43,Muntinlupa
 2026-09-06,g0103,2026-09-05,past,145.55,157.49,Muntinlupa
 2026-09-06,g0103,2026-09-06,forecast,144.88,166.11,Muntinlupa
 2026-09-06,g0103,2026-09-07,forecast,138.64,185.64,Muntinlupa
@@ -23,6 +41,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0103,2026-09-10,forecast,162.68,318.89,Muntinlupa
 2026-09-06,g0103,2026-09-11,forecast,263.85,867.96,Muntinlupa
 2026-09-06,g0103,2026-09-12,forecast,455.04,1685.55,Muntinlupa
+2026-09-06,g0201,2026-08-30,past,4.46,8.35,Las Piñas
+2026-09-06,g0201,2026-08-31,past,3.92,5.15,Las Piñas
+2026-09-06,g0201,2026-09-01,past,2.24,3.02,Las Piñas
+2026-09-06,g0201,2026-09-02,past,1.45,1.91,Las Piñas
+2026-09-06,g0201,2026-09-03,past,2.44,3.57,Las Piñas
+2026-09-06,g0201,2026-09-04,past,2.53,4.62,Las Piñas
 2026-09-06,g0201,2026-09-05,past,2.04,3.99,Las Piñas
 2026-09-06,g0201,2026-09-06,forecast,3.81,9.09,Las Piñas
 2026-09-06,g0201,2026-09-07,forecast,3.25,5.59,Las Piñas
@@ -31,6 +55,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0201,2026-09-10,forecast,4.81,31.96,Las Piñas
 2026-09-06,g0201,2026-09-11,forecast,9.02,41.27,Las Piñas
 2026-09-06,g0201,2026-09-12,forecast,12.9,27.38,Las Piñas
+2026-09-06,g0202,2026-08-30,past,3.98,8.48,"Las Piñas, Parañaque"
+2026-09-06,g0202,2026-08-31,past,2.47,4.92,"Las Piñas, Parañaque"
+2026-09-06,g0202,2026-09-01,past,1.08,1.09,"Las Piñas, Parañaque"
+2026-09-06,g0202,2026-09-02,past,0.69,0.7,"Las Piñas, Parañaque"
+2026-09-06,g0202,2026-09-03,past,0.77,2.21,"Las Piñas, Parañaque"
+2026-09-06,g0202,2026-09-04,past,0.43,3.54,"Las Piñas, Parañaque"
 2026-09-06,g0202,2026-09-05,past,0.5,3.91,"Las Piñas, Parañaque"
 2026-09-06,g0202,2026-09-06,forecast,3.8,10.72,"Las Piñas, Parañaque"
 2026-09-06,g0202,2026-09-07,forecast,1.78,4.43,"Las Piñas, Parañaque"
@@ -39,6 +69,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0202,2026-09-10,forecast,5.24,43.57,"Las Piñas, Parañaque"
 2026-09-06,g0202,2026-09-11,forecast,12.68,60.66,"Las Piñas, Parañaque"
 2026-09-06,g0202,2026-09-12,forecast,17.11,38.17,"Las Piñas, Parañaque"
+2026-09-06,g0203,2026-08-30,past,110.94,123.45,"Muntinlupa, Parañaque, Taguig"
+2026-09-06,g0203,2026-08-31,past,159.32,166.88,"Muntinlupa, Parañaque, Taguig"
+2026-09-06,g0203,2026-09-01,past,163.44,165.72,"Muntinlupa, Parañaque, Taguig"
+2026-09-06,g0203,2026-09-02,past,174.39,176.83,"Muntinlupa, Parañaque, Taguig"
+2026-09-06,g0203,2026-09-03,past,171.19,176.01,"Muntinlupa, Parañaque, Taguig"
+2026-09-06,g0203,2026-09-04,past,159.32,168.43,"Muntinlupa, Parañaque, Taguig"
 2026-09-06,g0203,2026-09-05,past,145.55,157.49,"Muntinlupa, Parañaque, Taguig"
 2026-09-06,g0203,2026-09-06,forecast,144.88,166.11,"Muntinlupa, Parañaque, Taguig"
 2026-09-06,g0203,2026-09-07,forecast,138.64,185.64,"Muntinlupa, Parañaque, Taguig"
@@ -47,6 +83,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0203,2026-09-10,forecast,162.68,318.89,"Muntinlupa, Parañaque, Taguig"
 2026-09-06,g0203,2026-09-11,forecast,263.85,867.96,"Muntinlupa, Parañaque, Taguig"
 2026-09-06,g0203,2026-09-12,forecast,455.04,1685.55,"Muntinlupa, Parañaque, Taguig"
+2026-09-06,g0302,2026-08-30,past,6.21,8.1,"Las Piñas, Parañaque, Pasay City"
+2026-09-06,g0302,2026-08-31,past,6.59,8.02,"Las Piñas, Parañaque, Pasay City"
+2026-09-06,g0302,2026-09-01,past,4.75,5.12,"Las Piñas, Parañaque, Pasay City"
+2026-09-06,g0302,2026-09-02,past,3.81,4.2,"Las Piñas, Parañaque, Pasay City"
+2026-09-06,g0302,2026-09-03,past,3.48,4.01,"Las Piñas, Parañaque, Pasay City"
+2026-09-06,g0302,2026-09-04,past,3.33,4.78,"Las Piñas, Parañaque, Pasay City"
 2026-09-06,g0302,2026-09-05,past,2.92,4.53,"Las Piñas, Parañaque, Pasay City"
 2026-09-06,g0302,2026-09-06,forecast,4.25,7.67,"Las Piñas, Parañaque, Pasay City"
 2026-09-06,g0302,2026-09-07,forecast,4.41,8.25,"Las Piñas, Parañaque, Pasay City"
@@ -55,6 +97,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0302,2026-09-10,forecast,4.9,16.82,"Las Piñas, Parañaque, Pasay City"
 2026-09-06,g0302,2026-09-11,forecast,7.38,35.14,"Las Piñas, Parañaque, Pasay City"
 2026-09-06,g0302,2026-09-12,forecast,11.56,43.77,"Las Piñas, Parañaque, Pasay City"
+2026-09-06,g0303,2026-08-30,past,324.84,395.28,"Parañaque, Pasay City, Taguig"
+2026-09-06,g0303,2026-08-31,past,371.39,425.58,"Parañaque, Pasay City, Taguig"
+2026-09-06,g0303,2026-09-01,past,326.34,344.14,"Parañaque, Pasay City, Taguig"
+2026-09-06,g0303,2026-09-02,past,305.9,315.96,"Parañaque, Pasay City, Taguig"
+2026-09-06,g0303,2026-09-03,past,294.12,321.11,"Parañaque, Pasay City, Taguig"
+2026-09-06,g0303,2026-09-04,past,271.9,319.63,"Parañaque, Pasay City, Taguig"
 2026-09-06,g0303,2026-09-05,past,259.02,309.46,"Parañaque, Pasay City, Taguig"
 2026-09-06,g0303,2026-09-06,forecast,294.8,392.55,"Parañaque, Pasay City, Taguig"
 2026-09-06,g0303,2026-09-07,forecast,284.1,395.28,"Parañaque, Pasay City, Taguig"
@@ -63,6 +111,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0303,2026-09-10,forecast,330.13,658.17,"Parañaque, Pasay City, Taguig"
 2026-09-06,g0303,2026-09-11,forecast,474.34,1554.97,"Parañaque, Pasay City, Taguig"
 2026-09-06,g0303,2026-09-12,forecast,725.11,2359.48,"Parañaque, Pasay City, Taguig"
+2026-09-06,g0304,2026-08-30,past,5.32,7.83,Taguig
+2026-09-06,g0304,2026-08-31,past,5.35,7.97,Taguig
+2026-09-06,g0304,2026-09-01,past,3.86,4.22,Taguig
+2026-09-06,g0304,2026-09-02,past,3.29,3.62,Taguig
+2026-09-06,g0304,2026-09-03,past,3.12,3.89,Taguig
+2026-09-06,g0304,2026-09-04,past,2.78,5.0,Taguig
 2026-09-06,g0304,2026-09-05,past,2.61,4.82,Taguig
 2026-09-06,g0304,2026-09-06,forecast,4.3,8.84,Taguig
 2026-09-06,g0304,2026-09-07,forecast,3.73,6.8,Taguig
@@ -71,6 +125,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0304,2026-09-10,forecast,5.22,35.39,Taguig
 2026-09-06,g0304,2026-09-11,forecast,8.06,40.02,Taguig
 2026-09-06,g0304,2026-09-12,forecast,11.05,43.98,Taguig
+2026-09-06,g0402,2026-08-30,past,331.66,402.65,"Makati, Manila, Parañaque, Pasay City"
+2026-09-06,g0402,2026-08-31,past,379.19,434.51,"Makati, Manila, Parañaque, Pasay City"
+2026-09-06,g0402,2026-09-01,past,332.43,350.56,"Makati, Manila, Parañaque, Pasay City"
+2026-09-06,g0402,2026-09-02,past,311.61,321.85,"Makati, Manila, Parañaque, Pasay City"
+2026-09-06,g0402,2026-09-03,past,298.92,327.1,"Makati, Manila, Parañaque, Pasay City"
+2026-09-06,g0402,2026-09-04,past,276.97,326.34,"Makati, Manila, Parañaque, Pasay City"
 2026-09-06,g0402,2026-09-05,past,263.85,315.96,"Makati, Manila, Parañaque, Pasay City"
 2026-09-06,g0402,2026-09-06,forecast,300.3,402.65,"Makati, Manila, Parañaque, Pasay City"
 2026-09-06,g0402,2026-09-07,forecast,290.07,404.51,"Makati, Manila, Parañaque, Pasay City"
@@ -79,6 +139,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0402,2026-09-10,forecast,333.97,671.98,"Makati, Manila, Parañaque, Pasay City"
 2026-09-06,g0402,2026-09-11,forecast,477.63,1576.61,"Makati, Manila, Parañaque, Pasay City"
 2026-09-06,g0402,2026-09-12,forecast,731.82,2381.32,"Makati, Manila, Parañaque, Pasay City"
+2026-09-06,g0403,2026-08-30,past,180.13,226.51,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-09-06,g0403,2026-08-31,past,176.83,211.81,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-09-06,g0403,2026-09-01,past,140.58,155.68,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-09-06,g0403,2026-09-02,past,114.88,121.46,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-09-06,g0403,2026-09-03,past,106.89,131.13,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-09-06,g0403,2026-09-04,past,98.54,128.12,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
 2026-09-06,g0403,2026-09-05,past,99.46,131.43,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
 2026-09-06,g0403,2026-09-06,forecast,125.77,179.72,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
 2026-09-06,g0403,2026-09-07,forecast,121.74,176.83,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
@@ -87,6 +153,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0403,2026-09-10,forecast,147.25,278.9,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
 2026-09-06,g0403,2026-09-11,forecast,180.97,611.35,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
 2026-09-06,g0403,2026-09-12,forecast,219.8,655.15,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-09-06,g0404,2026-08-30,past,7.18,10.78,"Pasig, Taguig"
+2026-09-06,g0404,2026-08-31,past,6.31,9.33,"Pasig, Taguig"
+2026-09-06,g0404,2026-09-01,past,4.45,5.28,"Pasig, Taguig"
+2026-09-06,g0404,2026-09-02,past,3.89,4.83,"Pasig, Taguig"
+2026-09-06,g0404,2026-09-03,past,4.41,5.79,"Pasig, Taguig"
+2026-09-06,g0404,2026-09-04,past,3.61,6.85,"Pasig, Taguig"
 2026-09-06,g0404,2026-09-05,past,3.44,6.73,"Pasig, Taguig"
 2026-09-06,g0404,2026-09-06,forecast,5.62,12.68,"Pasig, Taguig"
 2026-09-06,g0404,2026-09-07,forecast,4.89,7.73,"Pasig, Taguig"
@@ -95,6 +167,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0404,2026-09-10,forecast,6.28,39.83,"Pasig, Taguig"
 2026-09-06,g0404,2026-09-11,forecast,9.28,50.88,"Pasig, Taguig"
 2026-09-06,g0404,2026-09-12,forecast,12.24,62.68,"Pasig, Taguig"
+2026-09-06,g0501,2026-08-30,past,380.94,468.89,Manila
+2026-09-06,g0501,2026-08-31,past,419.73,486.53,Manila
+2026-09-06,g0501,2026-09-01,past,362.08,383.59,Manila
+2026-09-06,g0501,2026-09-02,past,337.06,348.95,Manila
+2026-09-06,g0501,2026-09-03,past,325.59,362.92,Manila
+2026-09-06,g0501,2026-09-04,past,299.61,366.28,Manila
 2026-09-06,g0501,2026-09-05,past,288.07,358.75,Manila
 2026-09-06,g0501,2026-09-06,forecast,336.29,466.74,Manila
 2026-09-06,g0501,2026-09-07,forecast,321.85,447.75,Manila
@@ -103,6 +181,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0501,2026-09-10,forecast,373.97,759.33,Manila
 2026-09-06,g0501,2026-09-11,forecast,527.45,1720.87,Manila
 2026-09-06,g0501,2026-09-12,forecast,804.38,2516.68,Manila
+2026-09-06,g0502,2026-08-30,past,331.66,402.65,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-09-06,g0502,2026-08-31,past,379.19,434.51,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-09-06,g0502,2026-09-01,past,332.43,350.56,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-09-06,g0502,2026-09-02,past,311.61,321.85,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-09-06,g0502,2026-09-03,past,298.92,327.1,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-09-06,g0502,2026-09-04,past,276.97,326.34,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
 2026-09-06,g0502,2026-09-05,past,263.85,315.96,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
 2026-09-06,g0502,2026-09-06,forecast,300.3,402.65,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
 2026-09-06,g0502,2026-09-07,forecast,290.07,404.51,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
@@ -111,6 +195,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0502,2026-09-10,forecast,333.97,671.98,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
 2026-09-06,g0502,2026-09-11,forecast,477.63,1576.61,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
 2026-09-06,g0502,2026-09-12,forecast,731.82,2381.32,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-09-06,g0503,2026-08-30,past,180.13,226.51,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-09-06,g0503,2026-08-31,past,176.83,211.81,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-09-06,g0503,2026-09-01,past,140.58,155.68,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-09-06,g0503,2026-09-02,past,114.88,121.46,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-09-06,g0503,2026-09-03,past,106.89,131.13,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-09-06,g0503,2026-09-04,past,98.54,128.12,"Mandaluyong, Pasig, Quezon City, San Juan"
 2026-09-06,g0503,2026-09-05,past,99.46,131.43,"Mandaluyong, Pasig, Quezon City, San Juan"
 2026-09-06,g0503,2026-09-06,forecast,125.77,179.72,"Mandaluyong, Pasig, Quezon City, San Juan"
 2026-09-06,g0503,2026-09-07,forecast,121.74,176.83,"Mandaluyong, Pasig, Quezon City, San Juan"
@@ -119,6 +209,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0503,2026-09-10,forecast,147.25,278.9,"Mandaluyong, Pasig, Quezon City, San Juan"
 2026-09-06,g0503,2026-09-11,forecast,180.97,611.35,"Mandaluyong, Pasig, Quezon City, San Juan"
 2026-09-06,g0503,2026-09-12,forecast,219.8,655.15,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-09-06,g0504,2026-08-30,past,7.18,10.78,"Marikina, Pasig, Quezon City"
+2026-09-06,g0504,2026-08-31,past,6.31,9.33,"Marikina, Pasig, Quezon City"
+2026-09-06,g0504,2026-09-01,past,4.45,5.28,"Marikina, Pasig, Quezon City"
+2026-09-06,g0504,2026-09-02,past,3.89,4.83,"Marikina, Pasig, Quezon City"
+2026-09-06,g0504,2026-09-03,past,4.41,5.79,"Marikina, Pasig, Quezon City"
+2026-09-06,g0504,2026-09-04,past,3.61,6.85,"Marikina, Pasig, Quezon City"
 2026-09-06,g0504,2026-09-05,past,3.44,6.73,"Marikina, Pasig, Quezon City"
 2026-09-06,g0504,2026-09-06,forecast,5.62,12.68,"Marikina, Pasig, Quezon City"
 2026-09-06,g0504,2026-09-07,forecast,4.89,7.73,"Marikina, Pasig, Quezon City"
@@ -127,6 +223,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0504,2026-09-10,forecast,6.28,39.83,"Marikina, Pasig, Quezon City"
 2026-09-06,g0504,2026-09-11,forecast,9.28,50.88,"Marikina, Pasig, Quezon City"
 2026-09-06,g0504,2026-09-12,forecast,12.24,62.68,"Marikina, Pasig, Quezon City"
+2026-09-06,g0601,2026-08-30,past,30.33,41.85,"Caloocan, Malabon, Manila, Navotas"
+2026-09-06,g0601,2026-08-31,past,22.66,30.48,"Caloocan, Malabon, Manila, Navotas"
+2026-09-06,g0601,2026-09-01,past,15.71,20.48,"Caloocan, Malabon, Manila, Navotas"
+2026-09-06,g0601,2026-09-02,past,13.49,14.67,"Caloocan, Malabon, Manila, Navotas"
+2026-09-06,g0601,2026-09-03,past,13.59,18.68,"Caloocan, Malabon, Manila, Navotas"
+2026-09-06,g0601,2026-09-04,past,11.47,20.09,"Caloocan, Malabon, Manila, Navotas"
 2026-09-06,g0601,2026-09-05,past,13.0,24.12,"Caloocan, Malabon, Manila, Navotas"
 2026-09-06,g0601,2026-09-06,forecast,19.14,31.36,"Caloocan, Malabon, Manila, Navotas"
 2026-09-06,g0601,2026-09-07,forecast,17.24,20.63,"Caloocan, Malabon, Manila, Navotas"
@@ -135,6 +237,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0601,2026-09-10,forecast,28.58,70.94,"Caloocan, Malabon, Manila, Navotas"
 2026-09-06,g0601,2026-09-11,forecast,30.92,160.06,"Caloocan, Malabon, Manila, Navotas"
 2026-09-06,g0601,2026-09-12,forecast,45.99,181.81,"Caloocan, Malabon, Manila, Navotas"
+2026-09-06,g0602,2026-08-30,past,10.43,14.89,"Caloocan, Malabon, Manila, Quezon City"
+2026-09-06,g0602,2026-08-31,past,7.89,11.02,"Caloocan, Malabon, Manila, Quezon City"
+2026-09-06,g0602,2026-09-01,past,5.3,6.93,"Caloocan, Malabon, Manila, Quezon City"
+2026-09-06,g0602,2026-09-02,past,4.75,5.5,"Caloocan, Malabon, Manila, Quezon City"
+2026-09-06,g0602,2026-09-03,past,5.34,7.85,"Caloocan, Malabon, Manila, Quezon City"
+2026-09-06,g0602,2026-09-04,past,4.33,8.38,"Caloocan, Malabon, Manila, Quezon City"
 2026-09-06,g0602,2026-09-05,past,4.83,9.62,"Caloocan, Malabon, Manila, Quezon City"
 2026-09-06,g0602,2026-09-06,forecast,7.22,13.0,"Caloocan, Malabon, Manila, Quezon City"
 2026-09-06,g0602,2026-09-07,forecast,6.18,7.67,"Caloocan, Malabon, Manila, Quezon City"
@@ -143,6 +251,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0602,2026-09-10,forecast,9.33,29.34,"Caloocan, Malabon, Manila, Quezon City"
 2026-09-06,g0602,2026-09-11,forecast,10.53,53.33,"Caloocan, Malabon, Manila, Quezon City"
 2026-09-06,g0602,2026-09-12,forecast,15.0,62.1,"Caloocan, Malabon, Manila, Quezon City"
+2026-09-06,g0603,2026-08-30,past,157.49,194.43,Quezon City
+2026-09-06,g0603,2026-08-31,past,156.04,183.08,Quezon City
+2026-09-06,g0603,2026-09-01,past,125.18,137.68,Quezon City
+2026-09-06,g0603,2026-09-02,past,100.39,104.93,Quezon City
+2026-09-06,g0603,2026-09-03,past,92.11,111.46,Quezon City
+2026-09-06,g0603,2026-09-04,past,86.9,107.89,Quezon City
 2026-09-06,g0603,2026-09-05,past,87.31,109.66,Quezon City
 2026-09-06,g0603,2026-09-06,forecast,107.14,146.57,Quezon City
 2026-09-06,g0603,2026-09-07,forecast,105.17,159.32,Quezon City
@@ -151,6 +265,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0603,2026-09-10,forecast,127.53,208.41,Quezon City
 2026-09-06,g0603,2026-09-11,forecast,152.82,503.66,Quezon City
 2026-09-06,g0603,2026-09-12,forecast,179.72,569.16,Quezon City
+2026-09-06,g0604,2026-08-30,past,9.3,11.5,"Marikina, Quezon City"
+2026-09-06,g0604,2026-08-31,past,9.09,11.11,"Marikina, Quezon City"
+2026-09-06,g0604,2026-09-01,past,7.15,7.85,"Marikina, Quezon City"
+2026-09-06,g0604,2026-09-02,past,5.82,6.11,"Marikina, Quezon City"
+2026-09-06,g0604,2026-09-03,past,5.3,6.53,"Marikina, Quezon City"
+2026-09-06,g0604,2026-09-04,past,4.82,6.23,"Marikina, Quezon City"
 2026-09-06,g0604,2026-09-05,past,4.75,6.31,"Marikina, Quezon City"
 2026-09-06,g0604,2026-09-06,forecast,6.31,9.05,"Marikina, Quezon City"
 2026-09-06,g0604,2026-09-07,forecast,6.24,9.67,"Marikina, Quezon City"
@@ -159,6 +279,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0604,2026-09-10,forecast,8.08,13.76,"Marikina, Quezon City"
 2026-09-06,g0604,2026-09-11,forecast,9.64,30.19,"Marikina, Quezon City"
 2026-09-06,g0604,2026-09-12,forecast,11.45,34.24,"Marikina, Quezon City"
+2026-09-06,g0605,2026-08-30,past,9.3,11.5,Marikina
+2026-09-06,g0605,2026-08-31,past,9.09,11.11,Marikina
+2026-09-06,g0605,2026-09-01,past,7.15,7.85,Marikina
+2026-09-06,g0605,2026-09-02,past,5.82,6.11,Marikina
+2026-09-06,g0605,2026-09-03,past,5.3,6.53,Marikina
+2026-09-06,g0605,2026-09-04,past,4.82,6.23,Marikina
 2026-09-06,g0605,2026-09-05,past,4.75,6.31,Marikina
 2026-09-06,g0605,2026-09-06,forecast,6.31,9.05,Marikina
 2026-09-06,g0605,2026-09-07,forecast,6.24,9.67,Marikina
@@ -167,6 +293,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0605,2026-09-10,forecast,8.08,13.76,Marikina
 2026-09-06,g0605,2026-09-11,forecast,9.64,30.19,Marikina
 2026-09-06,g0605,2026-09-12,forecast,11.45,34.24,Marikina
+2026-09-06,g0700,2026-08-30,past,2.63,3.2,Navotas
+2026-09-06,g0700,2026-08-31,past,2.72,3.12,Navotas
+2026-09-06,g0700,2026-09-01,past,2.06,2.2,Navotas
+2026-09-06,g0700,2026-09-02,past,1.75,1.86,Navotas
+2026-09-06,g0700,2026-09-03,past,1.35,1.58,Navotas
+2026-09-06,g0700,2026-09-04,past,1.13,1.4,Navotas
 2026-09-06,g0700,2026-09-05,past,1.11,1.6,Navotas
 2026-09-06,g0700,2026-09-06,forecast,1.67,2.13,Navotas
 2026-09-06,g0700,2026-09-07,forecast,1.8,2.34,Navotas
@@ -175,6 +307,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0700,2026-09-10,forecast,2.37,3.75,Navotas
 2026-09-06,g0700,2026-09-11,forecast,3.36,11.42,Navotas
 2026-09-06,g0700,2026-09-12,forecast,5.46,16.82,Navotas
+2026-09-06,g0701,2026-08-30,past,30.33,41.85,"Malabon, Navotas, Valenzuela"
+2026-09-06,g0701,2026-08-31,past,22.66,30.48,"Malabon, Navotas, Valenzuela"
+2026-09-06,g0701,2026-09-01,past,15.71,20.48,"Malabon, Navotas, Valenzuela"
+2026-09-06,g0701,2026-09-02,past,13.49,14.67,"Malabon, Navotas, Valenzuela"
+2026-09-06,g0701,2026-09-03,past,13.59,18.68,"Malabon, Navotas, Valenzuela"
+2026-09-06,g0701,2026-09-04,past,11.47,20.09,"Malabon, Navotas, Valenzuela"
 2026-09-06,g0701,2026-09-05,past,13.0,24.12,"Malabon, Navotas, Valenzuela"
 2026-09-06,g0701,2026-09-06,forecast,19.14,31.36,"Malabon, Navotas, Valenzuela"
 2026-09-06,g0701,2026-09-07,forecast,17.24,20.63,"Malabon, Navotas, Valenzuela"
@@ -183,6 +321,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0701,2026-09-10,forecast,28.58,70.94,"Malabon, Navotas, Valenzuela"
 2026-09-06,g0701,2026-09-11,forecast,30.92,160.06,"Malabon, Navotas, Valenzuela"
 2026-09-06,g0701,2026-09-12,forecast,45.99,181.81,"Malabon, Navotas, Valenzuela"
+2026-09-06,g0702,2026-08-30,past,10.43,14.89,"Caloocan, Valenzuela"
+2026-09-06,g0702,2026-08-31,past,7.89,11.02,"Caloocan, Valenzuela"
+2026-09-06,g0702,2026-09-01,past,5.3,6.93,"Caloocan, Valenzuela"
+2026-09-06,g0702,2026-09-02,past,4.75,5.5,"Caloocan, Valenzuela"
+2026-09-06,g0702,2026-09-03,past,5.34,7.85,"Caloocan, Valenzuela"
+2026-09-06,g0702,2026-09-04,past,4.33,8.38,"Caloocan, Valenzuela"
 2026-09-06,g0702,2026-09-05,past,4.83,9.62,"Caloocan, Valenzuela"
 2026-09-06,g0702,2026-09-06,forecast,7.22,13.0,"Caloocan, Valenzuela"
 2026-09-06,g0702,2026-09-07,forecast,6.18,7.67,"Caloocan, Valenzuela"
@@ -191,6 +335,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0702,2026-09-10,forecast,9.33,29.34,"Caloocan, Valenzuela"
 2026-09-06,g0702,2026-09-11,forecast,10.53,53.33,"Caloocan, Valenzuela"
 2026-09-06,g0702,2026-09-12,forecast,15.0,62.1,"Caloocan, Valenzuela"
+2026-09-06,g0703,2026-08-30,past,157.49,194.43,Quezon City
+2026-09-06,g0703,2026-08-31,past,156.04,183.08,Quezon City
+2026-09-06,g0703,2026-09-01,past,125.18,137.68,Quezon City
+2026-09-06,g0703,2026-09-02,past,100.39,104.93,Quezon City
+2026-09-06,g0703,2026-09-03,past,92.11,111.46,Quezon City
+2026-09-06,g0703,2026-09-04,past,86.9,107.89,Quezon City
 2026-09-06,g0703,2026-09-05,past,87.31,109.66,Quezon City
 2026-09-06,g0703,2026-09-06,forecast,107.14,146.57,Quezon City
 2026-09-06,g0703,2026-09-07,forecast,105.17,159.32,Quezon City
@@ -199,6 +349,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0703,2026-09-10,forecast,127.53,208.41,Quezon City
 2026-09-06,g0703,2026-09-11,forecast,152.82,503.66,Quezon City
 2026-09-06,g0703,2026-09-12,forecast,179.72,569.16,Quezon City
+2026-09-06,g0704,2026-08-30,past,9.3,11.5,Quezon City
+2026-09-06,g0704,2026-08-31,past,9.09,11.11,Quezon City
+2026-09-06,g0704,2026-09-01,past,7.15,7.85,Quezon City
+2026-09-06,g0704,2026-09-02,past,5.82,6.11,Quezon City
+2026-09-06,g0704,2026-09-03,past,5.3,6.53,Quezon City
+2026-09-06,g0704,2026-09-04,past,4.82,6.23,Quezon City
 2026-09-06,g0704,2026-09-05,past,4.75,6.31,Quezon City
 2026-09-06,g0704,2026-09-06,forecast,6.31,9.05,Quezon City
 2026-09-06,g0704,2026-09-07,forecast,6.24,9.67,Quezon City
@@ -207,6 +363,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0704,2026-09-10,forecast,8.08,13.76,Quezon City
 2026-09-06,g0704,2026-09-11,forecast,9.64,30.19,Quezon City
 2026-09-06,g0704,2026-09-12,forecast,11.45,34.24,Quezon City
+2026-09-06,g0801,2026-08-30,past,38.26,51.12,Valenzuela
+2026-09-06,g0801,2026-08-31,past,30.33,39.09,Valenzuela
+2026-09-06,g0801,2026-09-01,past,23.38,29.9,Valenzuela
+2026-09-06,g0801,2026-09-02,past,19.94,21.23,Valenzuela
+2026-09-06,g0801,2026-09-03,past,20.04,24.23,Valenzuela
+2026-09-06,g0801,2026-09-04,past,16.86,26.1,Valenzuela
 2026-09-06,g0801,2026-09-05,past,19.0,30.05,Valenzuela
 2026-09-06,g0801,2026-09-06,forecast,24.23,42.55,Valenzuela
 2026-09-06,g0801,2026-09-07,forecast,22.07,28.85,Valenzuela
@@ -215,6 +377,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0801,2026-09-10,forecast,40.02,67.39,Valenzuela
 2026-09-06,g0801,2026-09-11,forecast,38.54,181.81,Valenzuela
 2026-09-06,g0801,2026-09-12,forecast,52.09,182.23,Valenzuela
+2026-09-06,g0802,2026-08-30,past,19.75,25.3,"Caloocan, Valenzuela"
+2026-09-06,g0802,2026-08-31,past,17.03,21.23,"Caloocan, Valenzuela"
+2026-09-06,g0802,2026-09-01,past,13.83,16.5,"Caloocan, Valenzuela"
+2026-09-06,g0802,2026-09-02,past,11.82,12.58,"Caloocan, Valenzuela"
+2026-09-06,g0802,2026-09-03,past,11.25,13.69,"Caloocan, Valenzuela"
+2026-09-06,g0802,2026-09-04,past,9.84,14.1,"Caloocan, Valenzuela"
 2026-09-06,g0802,2026-09-05,past,10.25,14.78,"Caloocan, Valenzuela"
 2026-09-06,g0802,2026-09-06,forecast,12.71,21.34,"Caloocan, Valenzuela"
 2026-09-06,g0802,2026-09-07,forecast,12.0,17.41,"Caloocan, Valenzuela"
@@ -223,6 +391,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0802,2026-09-10,forecast,19.28,29.27,"Caloocan, Valenzuela"
 2026-09-06,g0802,2026-09-11,forecast,19.18,81.99,"Caloocan, Valenzuela"
 2026-09-06,g0802,2026-09-12,forecast,24.0,78.07,"Caloocan, Valenzuela"
+2026-09-06,g0803,2026-08-30,past,9.81,11.79,"Caloocan, Quezon City"
+2026-09-06,g0803,2026-08-31,past,9.12,10.59,"Caloocan, Quezon City"
+2026-09-06,g0803,2026-09-01,past,7.79,8.59,"Caloocan, Quezon City"
+2026-09-06,g0803,2026-09-02,past,6.46,6.87,"Caloocan, Quezon City"
+2026-09-06,g0803,2026-09-03,past,5.68,6.64,"Caloocan, Quezon City"
+2026-09-06,g0803,2026-09-04,past,5.25,6.66,"Caloocan, Quezon City"
 2026-09-06,g0803,2026-09-05,past,5.22,6.74,"Caloocan, Quezon City"
 2026-09-06,g0803,2026-09-06,forecast,6.35,9.45,"Caloocan, Quezon City"
 2026-09-06,g0803,2026-09-07,forecast,6.05,9.5,"Caloocan, Quezon City"
@@ -231,6 +405,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0803,2026-09-10,forecast,8.42,12.3,"Caloocan, Quezon City"
 2026-09-06,g0803,2026-09-11,forecast,9.52,33.28,"Caloocan, Quezon City"
 2026-09-06,g0803,2026-09-12,forecast,10.83,37.82,"Caloocan, Quezon City"
+2026-09-06,g0804,2026-08-30,past,22.99,27.58,"Caloocan, Quezon City"
+2026-09-06,g0804,2026-08-31,past,22.17,24.82,"Caloocan, Quezon City"
+2026-09-06,g0804,2026-09-01,past,18.72,20.68,"Caloocan, Quezon City"
+2026-09-06,g0804,2026-09-02,past,14.92,15.87,"Caloocan, Quezon City"
+2026-09-06,g0804,2026-09-03,past,13.39,15.79,"Caloocan, Quezon City"
+2026-09-06,g0804,2026-09-04,past,12.9,16.91,"Caloocan, Quezon City"
 2026-09-06,g0804,2026-09-05,past,13.16,15.98,"Caloocan, Quezon City"
 2026-09-06,g0804,2026-09-06,forecast,15.03,21.44,"Caloocan, Quezon City"
 2026-09-06,g0804,2026-09-07,forecast,14.21,22.28,"Caloocan, Quezon City"
@@ -239,6 +419,12 @@ run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
 2026-09-06,g0804,2026-09-10,forecast,17.49,27.31,"Caloocan, Quezon City"
 2026-09-06,g0804,2026-09-11,forecast,20.23,68.82,"Caloocan, Quezon City"
 2026-09-06,g0804,2026-09-12,forecast,22.33,80.66,"Caloocan, Quezon City"
+2026-09-06,g0903,2026-08-30,past,9.26,11.11,Caloocan
+2026-09-06,g0903,2026-08-31,past,8.23,9.47,Caloocan
+2026-09-06,g0903,2026-09-01,past,7.15,7.99,Caloocan
+2026-09-06,g0903,2026-09-02,past,5.92,6.24,Caloocan
+2026-09-06,g0903,2026-09-03,past,5.07,5.78,Caloocan
+2026-09-06,g0903,2026-09-04,past,4.73,6.05,Caloocan
 2026-09-06,g0903,2026-09-05,past,4.64,5.95,Caloocan
 2026-09-06,g0903,2026-09-06,forecast,5.55,8.48,Caloocan
 2026-09-06,g0903,2026-09-07,forecast,5.19,9.19,Caloocan
