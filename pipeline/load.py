@@ -168,18 +168,32 @@ def _create(con: duckdb.DuckDBPyConnection, name: str, df: pd.DataFrame, cols: l
 
 
 def load_all(raw_dir: Path = config.RAW_DIR, db_path: Path = config.DB_PATH) -> dict[str, int]:
+    """Rebuild the DuckDB ``raw`` schema from the snapshots on disk.
+
+    Every run directory contributes to ``forecast_daily``, and every archive window
+    contributes to ``archive_daily``: both are deduplicated downstream and both feed the
+    long observed history, so dropping old ones would lose data.
+
+    ``forecast_hourly`` and ``flood_daily`` are read only from the newest
+    ``config.HOURLY_RUN_DIRS`` run directories, sorted by directory name, which is the run
+    date. Downstream only ever consumes the latest run's hourly and flood rows, so older
+    ones are dead weight, and reading them all would make the daily rebuild slower and
+    heavier every day as snapshots accumulate.
+    """
     fd, fh, fl, ar = [], [], [], []
     if raw_dir.exists():
         run_dirs = sorted(p for p in raw_dir.iterdir() if p.is_dir() and p.name != "archive")
     else:
         run_dirs = []
+    recent = set(run_dirs[-config.HOURLY_RUN_DIRS :])
     for run_dir in run_dirs:
         f_path, l_path = run_dir / "forecast.json", run_dir / "flood.json"
         if f_path.exists():
             d, h = flatten_forecast(_read(f_path))
             fd.append(d)
-            fh.append(h)
-        if l_path.exists():
+            if run_dir in recent:
+                fh.append(h)
+        if l_path.exists() and run_dir in recent:
             fl.append(flatten_flood(_read(l_path)))
     archive_dir = raw_dir / "archive"
     if archive_dir.exists():

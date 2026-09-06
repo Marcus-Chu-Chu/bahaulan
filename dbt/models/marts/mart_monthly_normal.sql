@@ -14,8 +14,12 @@ normal as (
     group by month
 ),
 latest as (select year(max(date)) as current_year from ncr_daily)
-select m.year, m.month, make_date(m.year, m.month, 1) as month_start, m.total_mm,
-       n.normal_mm, n.p10_mm, n.p90_mm, m.year = latest.current_year as is_current_year,
+select m.year, m.month, make_date(m.year, m.month, 1) as month_start,
+       round(m.total_mm, 2) as total_mm,
+       round(n.normal_mm, 2) as normal_mm,
+       round(n.p10_mm, 2) as p10_mm,
+       round(n.p90_mm, 2) as p90_mm,
+       m.year = latest.current_year as is_current_year,
        m.days_covered,
        m.days_covered = day(last_day(make_date(m.year, m.month, 1))) as is_complete
 from monthly m

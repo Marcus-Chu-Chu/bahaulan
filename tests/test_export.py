@@ -126,6 +126,8 @@ def test_export_all_writes_contract(tmp_path):
     )
 
     assert not cwd_log.exists()
+    # hyperd.log is a Hyper debugging artifact, not part of the export contract.
+    assert not (tmp_path / "exports" / "hyperd.log").exists()
 
 
 def test_export_all_is_atomic(tmp_path, monkeypatch):

@@ -17,18 +17,40 @@ class FetchError(RuntimeError):
     """Raised when Open-Meteo cannot be read after retries or returns a bad shape."""
 
 
+def _retry_after(resp: object) -> float:
+    """Seconds to wait after a 429, from the Retry-After header when it is usable.
+
+    Open-Meteo's free tier answers an over-quota caller with 429 and often a Retry-After
+    header. Backing off 1 or 2 seconds there just burns another attempt, so honour the
+    header when it parses as a positive number of seconds, capped so one bad header cannot
+    stall a scheduled run, and fall back to a flat minute otherwise.
+    """
+    raw = getattr(resp, "headers", {}) or {}
+    value = raw.get("Retry-After")
+    try:
+        seconds = int(str(value).strip())
+    except (TypeError, ValueError):
+        return config.RATE_LIMIT_SLEEP
+    if seconds <= 0:
+        return config.RATE_LIMIT_SLEEP
+    return min(seconds, 120)
+
+
 def _get(url: str, params: dict) -> list | dict:
     last = "no attempt"
     for attempt in range(config.HTTP_RETRIES):
+        pause = 2**attempt
         try:
             resp = requests.get(url, params=params, timeout=config.HTTP_TIMEOUT)
             if resp.status_code == 200:
                 return resp.json()
+            if resp.status_code == 429:
+                pause = _retry_after(resp)
             last = f"HTTP {resp.status_code}: {resp.text[:200]}"
         except requests.RequestException as exc:
             last = repr(exc)
         if attempt < config.HTTP_RETRIES - 1:
-            time.sleep(2**attempt)
+            time.sleep(pause)
     raise FetchError(f"{url} failed after {config.HTTP_RETRIES} attempts: {last}")
 
 
@@ -130,9 +152,20 @@ def year_ranges(start: date, end: date) -> list[tuple[date, date]]:
 def fetch_archive_if_needed(
     run_date: date, points: list[GridPoint], archive_dir: Path = config.ARCHIVE_DIR
 ) -> list[Path]:
+    """Fetch the archive days not on disk yet, plus a trailing re-fetch window.
+
+    ERA5 publishes some grid-days as null and fills them in a few days later, so a pure
+    "start where the last file ended" backfill would freeze those holes in place forever.
+    Every run therefore re-asks for the last ``config.ARCHIVE_REFETCH_DAYS`` days as well.
+    Overlapping windows are safe: ``stg_archive_daily`` drops null rows first, then keeps
+    the latest ``fetched_at`` per grid-day, so a later real value replaces an earlier null.
+    """
     target_end = run_date - timedelta(days=config.ARCHIVE_LAG_DAYS)
     last = archive_last_date(archive_dir)
-    start = date.fromisoformat(config.ARCHIVE_START) if last is None else last + timedelta(days=1)
+    if last is None:
+        start = date.fromisoformat(config.ARCHIVE_START)
+    else:
+        start = min(last + timedelta(days=1), target_end - timedelta(days=config.ARCHIVE_REFETCH_DAYS))
     if start > target_end:
         return []
     written = []

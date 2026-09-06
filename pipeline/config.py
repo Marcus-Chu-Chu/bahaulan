@@ -32,9 +32,16 @@ FORECAST_DAYS = 7
 PAST_DAYS = 7
 ARCHIVE_START = "2020-01-01"
 ARCHIVE_LAG_DAYS = 5  # ERA5 reanalysis trails real time; don't ask for the last few days
-MAX_POINTS_PER_REQUEST = 30
+# Always re-fetch this trailing window of archive days on every run. ERA5 cells can land null
+# on first publication and fill in a few days later, so a one-shot backfill leaves holes.
+# Overlapping windows are safe because stg_archive_daily drops nulls before keeping the latest
+# fetched_at per grid-day, so a later non-null value wins over an earlier null.
+ARCHIVE_REFETCH_DAYS = 14
+# 31 active points fit in one request, which halves the request count against the old 30.
+MAX_POINTS_PER_REQUEST = 50
 HTTP_TIMEOUT = 60
 HTTP_RETRIES = 3
+RATE_LIMIT_SLEEP = 60  # fallback pause after an HTTP 429 with no usable Retry-After header
 
 # PAGASA-style hourly rainfall warning bands, mm/h, checked top-down.
 WARNING_BANDS = ((30.0, "red"), (15.0, "orange"), (7.5, "yellow"))
@@ -43,6 +50,9 @@ WARNING_BANDS = ((30.0, "red"), (15.0, "orange"), (7.5, "yellow"))
 MAX_DAILY_MM = 500.0
 MAX_NULL_SHARE = 0.05
 MIN_FORECAST_HORIZON_DAYS = 6
+
+# Only the newest run directories are loaded for forecast_hourly and flood_daily.
+HOURLY_RUN_DIRS = 14
 
 # Dashboard window: observed days kept before run_date.
 DASHBOARD_LOOKBACK_DAYS = 30

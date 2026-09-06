@@ -190,9 +190,12 @@ def export_all(
         export_dir.mkdir(parents=True, exist_ok=True)
         for name in written:
             os.replace(tmp_dir / name, export_dir / name)
+        # The Hyper process writes its own hyperd.log into the temp dir. It is a local
+        # debugging artifact, not part of the export contract, so drop it rather than
+        # publish it next to the extracts.
         hyper_log = tmp_dir / "hyperd.log"
         if hyper_log.exists():
-            os.replace(hyper_log, export_dir / "hyperd.log")
+            hyper_log.unlink()
     finally:
         if tmp_dir.exists():
             shutil.rmtree(tmp_dir)

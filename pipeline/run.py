@@ -98,7 +98,6 @@ def run(
 ) -> int:
     t0 = time.time()
     row = {"run_date": run_date.isoformat(), "started_at_utc": datetime.now(UTC).isoformat(timespec="seconds")}
-    points = active_points()
     gates_detail: list[str] = []
 
     def finish(status: str) -> int:
@@ -109,6 +108,7 @@ def run(
         return 0 if status == "ok" else 1
 
     try:
+        points = active_points()
         if not offline:
             try:
                 fetch_daily(run_date, points, raw_dir=raw_dir)

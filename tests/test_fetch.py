@@ -58,10 +58,60 @@ def test_get_retries_then_raises(monkeypatch):
     assert sleeps == [1, 2]
 
 
+def test_get_honours_retry_after_on_429(monkeypatch):
+    sleeps = []
+    responses = []
+
+    class TooMany:
+        status_code = 429
+        text = "rate limited"
+        headers = {"Retry-After": "5"}
+
+    class Ok:
+        status_code = 200
+        text = "{}"
+        headers = {}
+
+        def json(self):
+            return {"ok": True}
+
+    queue = [TooMany(), TooMany(), Ok()]
+
+    def fake_get(url, params, timeout=None):
+        resp = queue.pop(0)
+        responses.append(resp)
+        return resp
+
+    monkeypatch.setattr(fetch.requests, "get", fake_get)
+    monkeypatch.setattr(fetch.time, "sleep", lambda s: sleeps.append(s))
+
+    assert fetch._get("http://x", {}) == {"ok": True}
+    assert sleeps == [5, 5]
+    assert len(responses) == 3
+
+
+def test_get_falls_back_to_rate_limit_sleep_without_retry_after(monkeypatch):
+    sleeps = []
+
+    class TooMany:
+        status_code = 429
+        text = "rate limited"
+        headers = {}
+
+    monkeypatch.setattr(fetch.requests, "get", lambda url, params, timeout=None: TooMany())
+    monkeypatch.setattr(fetch.time, "sleep", lambda s: sleeps.append(s))
+
+    with pytest.raises(fetch.FetchError, match="HTTP 429"):
+        fetch._get("http://x", {})
+
+    assert sleeps == [config.RATE_LIMIT_SLEEP] * (config.HTTP_RETRIES - 1)
+
+
 def test_get_raises_on_non_200(monkeypatch):
     class FakeResponse:
         status_code = 500
         text = "boom"
+        headers = {}
 
     monkeypatch.setattr(fetch.requests, "get", lambda url, params, timeout=None: FakeResponse())
     monkeypatch.setattr(fetch.time, "sleep", lambda s: None)
@@ -92,7 +142,20 @@ def test_archive_last_date_and_gap_logic(tmp_path, monkeypatch):
     assert fetch.archive_last_date(tmp_path) == date(2021, 6, 30)
 
     monkeypatch.setattr(fetch, "_get", lambda url, params: _fake_response(len(P)))
+    # target_end is run_date minus the 5-day ERA5 lag. The window always reaches back
+    # ARCHIVE_REFETCH_DAYS before target_end, even when the gap alone is shorter or empty,
+    # so null ERA5 cells published earlier get re-asked and overwritten.
     written = fetch.fetch_archive_if_needed(date(2021, 7, 3), P, archive_dir=tmp_path)
-    assert written == []  # 2021-07-03 minus lag (5) = 06-28, already covered
+    assert written == [tmp_path / "2021-06-14_2021-06-28.json"]
     written = fetch.fetch_archive_if_needed(date(2021, 7, 10), P, archive_dir=tmp_path)
-    assert written == [tmp_path / "2021-07-01_2021-07-05.json"]
+    assert written == [tmp_path / "2021-06-21_2021-07-05.json"]
+    # archive_last_date still reports the max END across files, not the max start.
+    assert fetch.archive_last_date(tmp_path) == date(2021, 7, 5)
+
+
+def test_fetch_archive_returns_empty_before_the_archive_start(tmp_path, monkeypatch):
+    # No snapshots yet, and the target end sits before ARCHIVE_START, so there is nothing
+    # to ask for. With a previous archive on disk the trailing re-fetch always yields a
+    # window, so this is the only path that returns nothing.
+    monkeypatch.setattr(fetch, "_get", lambda url, params: _fake_response(len(P)))
+    assert fetch.fetch_archive_if_needed(date(2019, 12, 1), P, archive_dir=tmp_path) == []

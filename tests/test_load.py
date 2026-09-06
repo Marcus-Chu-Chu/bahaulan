@@ -100,3 +100,29 @@ def test_load_all_accumulates_runs_and_is_idempotent(tmp_path):
     fetched_at = con.execute("select fetched_at from raw.forecast_daily limit 1").fetchone()[0]
     assert fetched_at == datetime(2026, 9, 3, 22, 1)
     con.close()
+
+
+def test_load_all_caps_hourly_and_flood_at_the_newest_run_dirs(tmp_path):
+    from datetime import date, timedelta
+
+    from pipeline import config
+
+    raw = tmp_path / "raw"
+    raw.mkdir()
+    total = config.HOURLY_RUN_DIRS + 2
+    for i in range(total):
+        day = (date(2026, 9, 4) + timedelta(days=i)).isoformat()
+        run_dir = raw / day
+        run_dir.mkdir()
+        for name in ("forecast.json", "flood.json"):
+            text = (FIX / "2026-09-04" / name).read_text().replace(
+                '"run_date":"2026-09-04"', f'"run_date":"{day}"'
+            )
+            (run_dir / name).write_text(text)
+
+    counts = load_all(raw_dir=raw, db_path=tmp_path / "cap.duckdb")
+    # Every run contributes daily rows; only the newest HOURLY_RUN_DIRS contribute hourly
+    # and flood rows, which is all downstream reads.
+    assert counts["forecast_daily"] == total * 4
+    assert counts["forecast_hourly"] == config.HOURLY_RUN_DIRS * 8
+    assert counts["flood_daily"] == config.HOURLY_RUN_DIRS * 4
