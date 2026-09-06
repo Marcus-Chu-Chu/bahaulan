@@ -13,3 +13,4 @@ exports/*.hyper
 exports/*.parquet
 .superpowers/
 .env
+hyperd.log
