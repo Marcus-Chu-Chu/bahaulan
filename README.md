@@ -14,6 +14,8 @@ flood, "ulan" for rain.
 ## Dashboard
 
 The workbook is not published yet. The Tableau Public link and screenshots go here once it is.
+[`docs/dashboard-build-guide.md`](docs/dashboard-build-guide.md) is the click path for building
+it, and the Power BI version alongside it, from the release files.
 
 Four views are planned, one per export file:
 
@@ -145,7 +147,8 @@ dbt/            models (staging, intermediate, marts), seeds, tests, profiles
 data/raw/       committed JSON snapshots: daily runs and yearly archive windows
 exports/        run output: river.csv, monthly_normal.csv, metadata.json are committed;
                 dashboard.csv, warnings.csv, dashboard.hyper and dashboard.parquet are not
-docs/           architecture and data dictionary
+docs/           architecture, data dictionary, dashboard build guide
+dashboards/     Power BI file and screenshots once they exist
 logs/runs.csv   one row per run: status, row counts, gate results
 tests/          pytest suite with offline fixtures
 ```
