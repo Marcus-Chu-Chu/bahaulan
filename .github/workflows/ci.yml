@@ -23,3 +23,5 @@ jobs:
         run: ruff check .
       - name: Test
         run: pytest -q
+      - name: Offline pipeline on committed snapshots
+        run: python -m pipeline.run --offline
