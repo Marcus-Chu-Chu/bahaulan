@@ -15,9 +15,10 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -36,6 +37,7 @@ jobs:
             echo "nothing to commit"
           else
             git commit -m "pipeline: run ${RUN_DATE}"
+            git pull --rebase origin main
             git push
           fi
       - name: Publish extracts to the rolling release
@@ -43,10 +45,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release view latest >/dev/null 2>&1 || gh release create latest --title "Latest extracts" --notes "Rolling release: dashboard extracts refreshed by the daily pipeline."
-          gh release upload latest exports/dashboard.hyper exports/dashboard.parquet exports/dashboard.csv exports/metadata.json --clobber
+          gh release upload latest exports/dashboard.hyper exports/dashboard.parquet exports/dashboard.csv exports/warnings.csv exports/river.csv exports/monthly_normal.csv exports/metadata.json --clobber
       - name: Upload run artifacts
-        uses: actions/upload-artifact@v4
+        if: always()
+        uses: actions/upload-artifact@v5
         with:
           name: exports-${{ env.RUN_DATE }}
           path: exports/
           retention-days: 14
+          if-no-files-found: ignore

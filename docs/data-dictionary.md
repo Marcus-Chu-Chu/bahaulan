@@ -5,15 +5,23 @@ come from the mart SQL in `dbt/models/marts/`.
 
 Two things apply to every rainfall and discharge column. The values are model output, not
 gauge readings: forecasts come from Open-Meteo's roughly 11 km forecast models, past rainfall
-comes from the ERA5 reanalysis at roughly 9 to 11 km, and river discharge comes from GloFAS at
-roughly 5 km. Each value is the model's area average for a grid cell, assigned to a barangay
-by nearest grid-point centroid, so two barangays sharing a grid point carry identical weather.
+comes from ERA5-Land where available and ERA5 otherwise at roughly 9 to 25 km, and river
+discharge comes from GloFAS at roughly 5 km. Each value is the model's area average for a
+grid cell, assigned to a barangay by nearest grid-point centroid, so two barangays sharing a
+grid point carry identical weather.
+
+`dashboard.csv`, `warnings.csv`, `dashboard.hyper` and `dashboard.parquet` are not committed
+to this repo. Download them from the `latest` release at stable URLs of the form
+`https://github.com/Marcus-Chu-Chu/bahaulan/releases/download/latest/dashboard.csv`.
+`river.csv`, `monthly_normal.csv` and `metadata.json` are committed under `exports/`.
 
 ## dashboard.csv
 
-One row per barangay per day, 1,710 barangays over a 37-day window (30 observed days before
-the run date plus a 7-day forecast). `dashboard.parquet` and `dashboard.hyper` hold the same
-rows and columns; the Hyper file has a single table named `dashboard`.
+One row per barangay per day, 1,710 barangays over a 37-day window: 30 days back from the run
+date plus a 7-day forecast. The `source` column below says which rows are observed (ERA5) and
+which are model forecast; the split is not a fixed count of days, because ERA5 lags real time
+by about 5 days. `dashboard.parquet` and `dashboard.hyper` hold the same rows and columns; the
+Hyper file has a single table named `dashboard`.
 
 | Column | Type | Unit | Definition |
 |---|---|---|---|
@@ -41,7 +49,8 @@ rows and columns; the Hyper file has a single table named `dashboard`.
 
 ## warnings.csv
 
-Every forecast hour from the current run, one row per grid point per hour.
+Every forecast hour from the current run, one row per grid point per hour. Hours where
+Open-Meteo returns a null hourly precipitation value are omitted, not included as zero.
 
 | Column | Type | Unit | Definition |
 |---|---|---|---|

@@ -11,6 +11,8 @@ dbt/dbt_packages/
 dbt/.user.yml
 exports/*.hyper
 exports/*.parquet
+exports/dashboard.csv
+exports/warnings.csv
 .superpowers/
 .env
 hyperd.log
