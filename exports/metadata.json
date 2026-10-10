@@ -1,9 +1,9 @@
 {
-  "run_date": "2026-10-09",
-  "generated_at_utc": "2026-10-09T01:39:49+00:00",
+  "run_date": "2026-10-10",
+  "generated_at_utc": "2026-10-10T01:27:16+00:00",
   "dashboard_rows": 63270,
-  "latest_observed_date": "2026-10-04",
-  "forecast_through": "2026-10-15",
+  "latest_observed_date": "2026-10-05",
+  "forecast_through": "2026-10-16",
   "active_grid_points": 31,
   "gates": {
     "freshness": "pass",
