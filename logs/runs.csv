@@ -60,3 +60,4 @@ run_date,started_at_utc,duration_s,status,forecast_rows,flood_rows,archive_rows,
 2026-10-27,2026-10-27T01:03:07+00:00,21.9,ok,22134,6076,99231,63270,freshness=pass;coverage=pass;null_share=pass;ranges=pass
 2026-10-28,2026-10-28T00:53:34+00:00,17.7,ok,22568,6076,99696,63270,freshness=pass;coverage=pass;null_share=pass;ranges=pass
 2026-10-29,2026-10-29T01:29:03+00:00,21.6,ok,23002,6076,100161,63270,freshness=pass;coverage=pass;null_share=pass;ranges=pass
+2026-10-30,2026-10-30T01:30:16+00:00,23.0,ok,23436,6076,100626,63270,freshness=pass;coverage=pass;null_share=pass;ranges=pass
