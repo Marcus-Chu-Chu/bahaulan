@@ -1,435 +1,435 @@
 run_date,grid_id,date,source,river_discharge,river_discharge_max,cities_served
-2026-11-02,g0003,2026-10-26,past,0.09,0.09,Muntinlupa
-2026-11-02,g0003,2026-10-27,past,0.08,0.1,Muntinlupa
-2026-11-02,g0003,2026-10-28,past,0.08,0.29,Muntinlupa
-2026-11-02,g0003,2026-10-29,past,0.09,0.64,Muntinlupa
-2026-11-02,g0003,2026-10-30,past,0.06,8.25,Muntinlupa
-2026-11-02,g0003,2026-10-31,past,0.06,1.98,Muntinlupa
-2026-11-02,g0003,2026-11-01,past,0.06,0.58,Muntinlupa
-2026-11-02,g0003,2026-11-02,forecast,0.07,0.55,Muntinlupa
-2026-11-02,g0003,2026-11-03,forecast,0.09,0.37,Muntinlupa
-2026-11-02,g0003,2026-11-04,forecast,0.09,0.66,Muntinlupa
-2026-11-02,g0003,2026-11-05,forecast,0.08,0.43,Muntinlupa
-2026-11-02,g0003,2026-11-06,forecast,0.07,0.28,Muntinlupa
-2026-11-02,g0003,2026-11-07,forecast,0.06,0.19,Muntinlupa
-2026-11-02,g0003,2026-11-08,forecast,0.05,0.58,Muntinlupa
-2026-11-02,g0102,2026-10-26,past,0.02,0.02,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-10-27,past,0.02,0.02,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-10-28,past,0.01,0.17,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-10-29,past,0.01,0.35,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-10-30,past,0.01,3.22,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-10-31,past,0.01,1.69,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-11-01,past,0.01,0.65,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-11-02,forecast,0.01,0.61,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-11-03,forecast,0.02,0.33,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-11-04,forecast,0.01,0.19,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-11-05,forecast,0.01,0.45,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-11-06,forecast,0.01,0.24,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-11-07,forecast,0.01,0.14,"Las Piñas, Muntinlupa"
-2026-11-02,g0102,2026-11-08,forecast,0.01,0.58,"Las Piñas, Muntinlupa"
-2026-11-02,g0103,2026-10-26,past,2.33,2.4,Muntinlupa
-2026-11-02,g0103,2026-10-27,past,0.43,0.43,Muntinlupa
-2026-11-02,g0103,2026-10-28,past,0.0,0.01,Muntinlupa
-2026-11-02,g0103,2026-10-29,past,0.0,0.04,Muntinlupa
-2026-11-02,g0103,2026-10-30,past,0.0,1.39,Muntinlupa
-2026-11-02,g0103,2026-10-31,past,0.0,0.34,Muntinlupa
-2026-11-02,g0103,2026-11-01,past,0.0,0.05,Muntinlupa
-2026-11-02,g0103,2026-11-02,forecast,0.0,0.05,Muntinlupa
-2026-11-02,g0103,2026-11-03,forecast,0.0,0.09,Muntinlupa
-2026-11-02,g0103,2026-11-04,forecast,0.0,0.06,Muntinlupa
-2026-11-02,g0103,2026-11-05,forecast,0.0,0.04,Muntinlupa
-2026-11-02,g0103,2026-11-06,forecast,0.0,0.04,Muntinlupa
-2026-11-02,g0103,2026-11-07,forecast,0.0,0.02,Muntinlupa
-2026-11-02,g0103,2026-11-08,forecast,0.0,0.06,Muntinlupa
-2026-11-02,g0201,2026-10-26,past,0.31,0.32,Las Piñas
-2026-11-02,g0201,2026-10-27,past,0.42,0.63,Las Piñas
-2026-11-02,g0201,2026-10-28,past,0.49,0.94,Las Piñas
-2026-11-02,g0201,2026-10-29,past,0.43,1.0,Las Piñas
-2026-11-02,g0201,2026-10-30,past,0.44,2.08,Las Piñas
-2026-11-02,g0201,2026-10-31,past,0.52,1.56,Las Piñas
-2026-11-02,g0201,2026-11-01,past,0.53,1.28,Las Piñas
-2026-11-02,g0201,2026-11-02,forecast,0.64,1.1,Las Piñas
-2026-11-02,g0201,2026-11-03,forecast,0.56,0.78,Las Piñas
-2026-11-02,g0201,2026-11-04,forecast,0.42,0.63,Las Piñas
-2026-11-02,g0201,2026-11-05,forecast,0.39,0.88,Las Piñas
-2026-11-02,g0201,2026-11-06,forecast,0.33,0.58,Las Piñas
-2026-11-02,g0201,2026-11-07,forecast,0.27,0.39,Las Piñas
-2026-11-02,g0201,2026-11-08,forecast,0.24,1.03,Las Piñas
-2026-11-02,g0202,2026-10-26,past,0.02,0.02,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-10-27,past,0.02,0.02,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-10-28,past,0.01,0.17,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-10-29,past,0.01,0.35,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-10-30,past,0.01,3.22,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-10-31,past,0.01,1.69,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-11-01,past,0.01,0.65,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-11-02,forecast,0.01,0.61,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-11-03,forecast,0.02,0.33,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-11-04,forecast,0.01,0.19,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-11-05,forecast,0.01,0.45,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-11-06,forecast,0.01,0.24,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-11-07,forecast,0.01,0.14,"Las Piñas, Parañaque"
-2026-11-02,g0202,2026-11-08,forecast,0.01,0.58,"Las Piñas, Parañaque"
-2026-11-02,g0203,2026-10-26,past,2.33,2.4,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-10-27,past,0.43,0.43,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-10-28,past,0.0,0.01,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-10-29,past,0.0,0.04,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-10-30,past,0.0,1.39,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-10-31,past,0.0,0.34,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-11-01,past,0.0,0.05,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-11-02,forecast,0.0,0.05,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-11-03,forecast,0.0,0.09,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-11-04,forecast,0.0,0.06,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-11-05,forecast,0.0,0.04,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-11-06,forecast,0.0,0.04,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-11-07,forecast,0.0,0.02,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0203,2026-11-08,forecast,0.0,0.06,"Muntinlupa, Parañaque, Taguig"
-2026-11-02,g0302,2026-10-26,past,0.41,0.41,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-10-27,past,0.33,0.48,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-10-28,past,0.23,0.3,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-10-29,past,0.17,0.31,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-10-30,past,0.07,0.64,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-10-31,past,0.11,0.3,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-11-01,past,0.09,0.29,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-11-02,forecast,0.12,0.35,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-11-03,forecast,0.17,0.67,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-11-04,forecast,0.2,0.73,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-11-05,forecast,0.22,0.67,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-11-06,forecast,0.18,0.66,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-11-07,forecast,0.12,0.56,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0302,2026-11-08,forecast,0.07,0.46,"Las Piñas, Parañaque, Pasay City"
-2026-11-02,g0303,2026-10-26,past,6.41,6.66,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-10-27,past,4.74,7.53,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-10-28,past,3.21,4.93,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-10-29,past,3.05,5.84,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-10-30,past,1.78,32.11,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-10-31,past,2.26,8.64,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-11-01,past,2.72,8.25,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-11-02,forecast,3.03,17.2,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-11-03,forecast,4.11,23.72,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-11-04,forecast,3.88,20.18,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-11-05,forecast,3.38,14.31,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-11-06,forecast,2.64,9.96,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-11-07,forecast,1.96,6.67,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0303,2026-11-08,forecast,1.36,6.33,"Parañaque, Pasay City, Taguig"
-2026-11-02,g0304,2026-10-26,past,0.2,0.23,Taguig
-2026-11-02,g0304,2026-10-27,past,0.21,0.49,Taguig
-2026-11-02,g0304,2026-10-28,past,0.24,0.48,Taguig
-2026-11-02,g0304,2026-10-29,past,0.21,0.69,Taguig
-2026-11-02,g0304,2026-10-30,past,0.15,1.19,Taguig
-2026-11-02,g0304,2026-10-31,past,0.16,0.77,Taguig
-2026-11-02,g0304,2026-11-01,past,0.22,0.87,Taguig
-2026-11-02,g0304,2026-11-02,forecast,0.36,0.76,Taguig
-2026-11-02,g0304,2026-11-03,forecast,0.34,0.68,Taguig
-2026-11-02,g0304,2026-11-04,forecast,0.23,0.45,Taguig
-2026-11-02,g0304,2026-11-05,forecast,0.17,0.93,Taguig
-2026-11-02,g0304,2026-11-06,forecast,0.16,0.8,Taguig
-2026-11-02,g0304,2026-11-07,forecast,0.15,0.47,Taguig
-2026-11-02,g0304,2026-11-08,forecast,0.14,0.61,Taguig
-2026-11-02,g0402,2026-10-26,past,7.69,7.89,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-10-27,past,4.32,6.89,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-10-28,past,2.67,4.26,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-10-29,past,2.59,5.14,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-10-30,past,1.49,29.55,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-10-31,past,1.91,8.18,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-11-01,past,2.23,7.61,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-11-02,forecast,2.39,15.63,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-11-03,forecast,3.49,21.65,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-11-04,forecast,3.44,18.63,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-11-05,forecast,3.0,13.09,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-11-06,forecast,2.28,9.0,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-11-07,forecast,1.65,5.95,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0402,2026-11-08,forecast,1.11,5.67,"Makati, Manila, Parañaque, Pasay City"
-2026-11-02,g0403,2026-10-26,past,4.66,4.86,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-10-27,past,4.57,7.45,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-10-28,past,3.51,5.05,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-10-29,past,3.25,5.05,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-10-30,past,2.16,30.41,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-10-31,past,2.66,7.57,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-11-01,past,3.07,6.62,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-11-02,forecast,3.15,16.02,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-11-03,forecast,4.2,23.49,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-11-04,forecast,4.02,20.18,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-11-05,forecast,3.6,14.42,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-11-06,forecast,2.88,10.14,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-11-07,forecast,2.23,6.91,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0403,2026-11-08,forecast,1.63,6.28,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
-2026-11-02,g0404,2026-10-26,past,0.67,0.73,"Pasig, Taguig"
-2026-11-02,g0404,2026-10-27,past,0.58,1.04,"Pasig, Taguig"
-2026-11-02,g0404,2026-10-28,past,0.53,0.96,"Pasig, Taguig"
-2026-11-02,g0404,2026-10-29,past,0.52,1.13,"Pasig, Taguig"
-2026-11-02,g0404,2026-10-30,past,0.51,3.2,"Pasig, Taguig"
-2026-11-02,g0404,2026-10-31,past,0.53,1.64,"Pasig, Taguig"
-2026-11-02,g0404,2026-11-01,past,0.72,1.56,"Pasig, Taguig"
-2026-11-02,g0404,2026-11-02,forecast,0.7,2.57,"Pasig, Taguig"
-2026-11-02,g0404,2026-11-03,forecast,0.63,1.69,"Pasig, Taguig"
-2026-11-02,g0404,2026-11-04,forecast,0.57,1.19,"Pasig, Taguig"
-2026-11-02,g0404,2026-11-05,forecast,0.53,1.53,"Pasig, Taguig"
-2026-11-02,g0404,2026-11-06,forecast,0.52,1.09,"Pasig, Taguig"
-2026-11-02,g0404,2026-11-07,forecast,0.5,0.78,"Pasig, Taguig"
-2026-11-02,g0404,2026-11-08,forecast,0.49,1.42,"Pasig, Taguig"
-2026-11-02,g0501,2026-10-26,past,12.84,13.0,Manila
-2026-11-02,g0501,2026-10-27,past,9.09,16.26,Manila
-2026-11-02,g0501,2026-10-28,past,6.83,9.94,Manila
-2026-11-02,g0501,2026-10-29,past,5.98,10.07,Manila
-2026-11-02,g0501,2026-10-30,past,4.25,45.13,Manila
-2026-11-02,g0501,2026-10-31,past,6.21,16.74,Manila
-2026-11-02,g0501,2026-11-01,past,6.31,13.42,Manila
-2026-11-02,g0501,2026-11-02,forecast,6.64,24.7,Manila
-2026-11-02,g0501,2026-11-03,forecast,8.04,35.06,Manila
-2026-11-02,g0501,2026-11-04,forecast,7.99,28.99,Manila
-2026-11-02,g0501,2026-11-05,forecast,7.61,21.44,Manila
-2026-11-02,g0501,2026-11-06,forecast,6.46,15.52,Manila
-2026-11-02,g0501,2026-11-07,forecast,4.86,11.02,Manila
-2026-11-02,g0501,2026-11-08,forecast,3.58,11.42,Manila
-2026-11-02,g0502,2026-10-26,past,7.69,7.89,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-10-27,past,4.32,6.89,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-10-28,past,2.67,4.26,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-10-29,past,2.59,5.14,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-10-30,past,1.49,29.55,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-10-31,past,1.91,8.18,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-11-01,past,2.23,7.61,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-11-02,forecast,2.39,15.63,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-11-03,forecast,3.49,21.65,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-11-04,forecast,3.44,18.63,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-11-05,forecast,3.0,13.09,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-11-06,forecast,2.28,9.0,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-11-07,forecast,1.65,5.95,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0502,2026-11-08,forecast,1.11,5.67,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
-2026-11-02,g0503,2026-10-26,past,4.66,4.86,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-10-27,past,4.57,7.45,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-10-28,past,3.51,5.05,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-10-29,past,3.25,5.05,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-10-30,past,2.16,30.41,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-10-31,past,2.66,7.57,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-11-01,past,3.07,6.62,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-11-02,forecast,3.15,16.02,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-11-03,forecast,4.2,23.49,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-11-04,forecast,4.02,20.18,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-11-05,forecast,3.6,14.42,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-11-06,forecast,2.88,10.14,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-11-07,forecast,2.23,6.91,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0503,2026-11-08,forecast,1.63,6.28,"Mandaluyong, Pasig, Quezon City, San Juan"
-2026-11-02,g0504,2026-10-26,past,0.67,0.73,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-10-27,past,0.58,1.04,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-10-28,past,0.53,0.96,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-10-29,past,0.52,1.13,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-10-30,past,0.51,3.2,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-10-31,past,0.53,1.64,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-11-01,past,0.72,1.56,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-11-02,forecast,0.7,2.57,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-11-03,forecast,0.63,1.69,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-11-04,forecast,0.57,1.19,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-11-05,forecast,0.53,1.53,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-11-06,forecast,0.52,1.09,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-11-07,forecast,0.5,0.78,"Marikina, Pasig, Quezon City"
-2026-11-02,g0504,2026-11-08,forecast,0.49,1.42,"Marikina, Pasig, Quezon City"
-2026-11-02,g0601,2026-10-26,past,0.92,0.99,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-10-27,past,1.2,6.62,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-10-28,past,1.24,1.94,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-10-29,past,1.02,3.75,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-10-30,past,1.01,15.26,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-10-31,past,1.67,2.74,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-11-01,past,1.75,2.42,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-11-02,forecast,1.91,8.14,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-11-03,forecast,1.77,9.81,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-11-04,forecast,1.31,6.6,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-11-05,forecast,1.43,4.73,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-11-06,forecast,1.19,3.29,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-11-07,forecast,0.95,2.36,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0601,2026-11-08,forecast,0.83,1.71,"Caloocan, Malabon, Manila, Navotas"
-2026-11-02,g0602,2026-10-26,past,0.98,1.05,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-10-27,past,0.98,3.19,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-10-28,past,0.95,1.56,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-10-29,past,0.87,1.65,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-10-30,past,0.91,7.36,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-10-31,past,1.24,2.39,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-11-01,past,1.39,2.04,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-11-02,forecast,1.23,4.57,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-11-03,forecast,1.14,3.58,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-11-04,forecast,0.99,2.17,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-11-05,forecast,1.16,1.9,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-11-06,forecast,1.05,1.55,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-11-07,forecast,0.85,1.16,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0602,2026-11-08,forecast,0.71,1.55,"Caloocan, Malabon, Manila, Quezon City"
-2026-11-02,g0603,2026-10-26,past,2.79,2.89,Quezon City
-2026-11-02,g0603,2026-10-27,past,2.85,4.57,Quezon City
-2026-11-02,g0603,2026-10-28,past,2.47,3.06,Quezon City
-2026-11-02,g0603,2026-10-29,past,2.29,3.01,Quezon City
-2026-11-02,g0603,2026-10-30,past,1.48,23.43,Quezon City
-2026-11-02,g0603,2026-10-31,past,1.54,3.68,Quezon City
-2026-11-02,g0603,2026-11-01,past,1.86,2.97,Quezon City
-2026-11-02,g0603,2026-11-02,forecast,2.18,10.17,Quezon City
-2026-11-02,g0603,2026-11-03,forecast,2.95,18.5,Quezon City
-2026-11-02,g0603,2026-11-04,forecast,2.52,15.44,Quezon City
-2026-11-02,g0603,2026-11-05,forecast,1.96,10.91,Quezon City
-2026-11-02,g0603,2026-11-06,forecast,1.56,7.45,Quezon City
-2026-11-02,g0603,2026-11-07,forecast,1.23,4.97,Quezon City
-2026-11-02,g0603,2026-11-08,forecast,0.92,4.04,Quezon City
-2026-11-02,g0604,2026-10-26,past,0.09,0.09,"Marikina, Quezon City"
-2026-11-02,g0604,2026-10-27,past,0.07,0.09,"Marikina, Quezon City"
-2026-11-02,g0604,2026-10-28,past,0.14,0.15,"Marikina, Quezon City"
-2026-11-02,g0604,2026-10-29,past,0.1,0.11,"Marikina, Quezon City"
-2026-11-02,g0604,2026-10-30,past,0.04,1.84,"Marikina, Quezon City"
-2026-11-02,g0604,2026-10-31,past,0.06,0.13,"Marikina, Quezon City"
-2026-11-02,g0604,2026-11-01,past,0.12,0.15,"Marikina, Quezon City"
-2026-11-02,g0604,2026-11-02,forecast,0.15,0.86,"Marikina, Quezon City"
-2026-11-02,g0604,2026-11-03,forecast,0.27,1.93,"Marikina, Quezon City"
-2026-11-02,g0604,2026-11-04,forecast,0.19,1.39,"Marikina, Quezon City"
-2026-11-02,g0604,2026-11-05,forecast,0.09,0.95,"Marikina, Quezon City"
-2026-11-02,g0604,2026-11-06,forecast,0.1,0.62,"Marikina, Quezon City"
-2026-11-02,g0604,2026-11-07,forecast,0.05,0.41,"Marikina, Quezon City"
-2026-11-02,g0604,2026-11-08,forecast,0.04,0.23,"Marikina, Quezon City"
-2026-11-02,g0605,2026-10-26,past,0.09,0.09,Marikina
-2026-11-02,g0605,2026-10-27,past,0.07,0.09,Marikina
-2026-11-02,g0605,2026-10-28,past,0.14,0.15,Marikina
-2026-11-02,g0605,2026-10-29,past,0.1,0.11,Marikina
-2026-11-02,g0605,2026-10-30,past,0.04,1.84,Marikina
-2026-11-02,g0605,2026-10-31,past,0.06,0.13,Marikina
-2026-11-02,g0605,2026-11-01,past,0.12,0.15,Marikina
-2026-11-02,g0605,2026-11-02,forecast,0.15,0.86,Marikina
-2026-11-02,g0605,2026-11-03,forecast,0.27,1.93,Marikina
-2026-11-02,g0605,2026-11-04,forecast,0.19,1.39,Marikina
-2026-11-02,g0605,2026-11-05,forecast,0.09,0.95,Marikina
-2026-11-02,g0605,2026-11-06,forecast,0.1,0.62,Marikina
-2026-11-02,g0605,2026-11-07,forecast,0.05,0.41,Marikina
-2026-11-02,g0605,2026-11-08,forecast,0.04,0.23,Marikina
-2026-11-02,g0700,2026-10-26,past,0.01,0.01,Navotas
-2026-11-02,g0700,2026-10-27,past,0.0,0.05,Navotas
-2026-11-02,g0700,2026-10-28,past,0.0,0.01,Navotas
-2026-11-02,g0700,2026-10-29,past,0.0,0.06,Navotas
-2026-11-02,g0700,2026-10-30,past,0.0,0.24,Navotas
-2026-11-02,g0700,2026-10-31,past,0.01,0.03,Navotas
-2026-11-02,g0700,2026-11-01,past,0.01,0.01,Navotas
-2026-11-02,g0700,2026-11-02,forecast,0.01,0.06,Navotas
-2026-11-02,g0700,2026-11-03,forecast,0.01,0.16,Navotas
-2026-11-02,g0700,2026-11-04,forecast,0.01,0.18,Navotas
-2026-11-02,g0700,2026-11-05,forecast,0.01,0.16,Navotas
-2026-11-02,g0700,2026-11-06,forecast,0.01,0.12,Navotas
-2026-11-02,g0700,2026-11-07,forecast,0.01,0.07,Navotas
-2026-11-02,g0700,2026-11-08,forecast,0.0,0.02,Navotas
-2026-11-02,g0701,2026-10-26,past,0.92,0.99,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-10-27,past,1.2,6.62,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-10-28,past,1.24,1.94,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-10-29,past,1.02,3.75,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-10-30,past,1.01,15.26,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-10-31,past,1.67,2.74,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-11-01,past,1.75,2.42,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-11-02,forecast,1.91,8.14,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-11-03,forecast,1.77,9.81,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-11-04,forecast,1.31,6.6,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-11-05,forecast,1.43,4.73,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-11-06,forecast,1.19,3.29,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-11-07,forecast,0.95,2.36,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0701,2026-11-08,forecast,0.83,1.71,"Malabon, Navotas, Valenzuela"
-2026-11-02,g0702,2026-10-26,past,0.98,1.05,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-10-27,past,0.98,3.19,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-10-28,past,0.95,1.56,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-10-29,past,0.87,1.65,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-10-30,past,0.91,7.36,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-10-31,past,1.24,2.39,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-11-01,past,1.39,2.04,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-11-02,forecast,1.23,4.57,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-11-03,forecast,1.14,3.58,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-11-04,forecast,0.99,2.17,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-11-05,forecast,1.16,1.9,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-11-06,forecast,1.05,1.55,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-11-07,forecast,0.85,1.16,"Caloocan, Valenzuela"
-2026-11-02,g0702,2026-11-08,forecast,0.71,1.55,"Caloocan, Valenzuela"
-2026-11-02,g0703,2026-10-26,past,2.79,2.89,Quezon City
-2026-11-02,g0703,2026-10-27,past,2.85,4.57,Quezon City
-2026-11-02,g0703,2026-10-28,past,2.47,3.06,Quezon City
-2026-11-02,g0703,2026-10-29,past,2.29,3.01,Quezon City
-2026-11-02,g0703,2026-10-30,past,1.48,23.43,Quezon City
-2026-11-02,g0703,2026-10-31,past,1.54,3.68,Quezon City
-2026-11-02,g0703,2026-11-01,past,1.86,2.97,Quezon City
-2026-11-02,g0703,2026-11-02,forecast,2.18,10.17,Quezon City
-2026-11-02,g0703,2026-11-03,forecast,2.95,18.5,Quezon City
-2026-11-02,g0703,2026-11-04,forecast,2.52,15.44,Quezon City
-2026-11-02,g0703,2026-11-05,forecast,1.96,10.91,Quezon City
-2026-11-02,g0703,2026-11-06,forecast,1.56,7.45,Quezon City
-2026-11-02,g0703,2026-11-07,forecast,1.23,4.97,Quezon City
-2026-11-02,g0703,2026-11-08,forecast,0.92,4.04,Quezon City
-2026-11-02,g0704,2026-10-26,past,0.09,0.09,Quezon City
-2026-11-02,g0704,2026-10-27,past,0.07,0.09,Quezon City
-2026-11-02,g0704,2026-10-28,past,0.14,0.15,Quezon City
-2026-11-02,g0704,2026-10-29,past,0.1,0.11,Quezon City
-2026-11-02,g0704,2026-10-30,past,0.04,1.84,Quezon City
-2026-11-02,g0704,2026-10-31,past,0.06,0.13,Quezon City
-2026-11-02,g0704,2026-11-01,past,0.12,0.15,Quezon City
-2026-11-02,g0704,2026-11-02,forecast,0.15,0.86,Quezon City
-2026-11-02,g0704,2026-11-03,forecast,0.27,1.93,Quezon City
-2026-11-02,g0704,2026-11-04,forecast,0.19,1.39,Quezon City
-2026-11-02,g0704,2026-11-05,forecast,0.09,0.95,Quezon City
-2026-11-02,g0704,2026-11-06,forecast,0.1,0.62,Quezon City
-2026-11-02,g0704,2026-11-07,forecast,0.05,0.41,Quezon City
-2026-11-02,g0704,2026-11-08,forecast,0.04,0.23,Quezon City
-2026-11-02,g0801,2026-10-26,past,1.13,1.26,Valenzuela
-2026-11-02,g0801,2026-10-27,past,1.97,7.05,Valenzuela
-2026-11-02,g0801,2026-10-28,past,1.89,2.52,Valenzuela
-2026-11-02,g0801,2026-10-29,past,1.42,4.52,Valenzuela
-2026-11-02,g0801,2026-10-30,past,1.24,13.96,Valenzuela
-2026-11-02,g0801,2026-10-31,past,1.62,3.23,Valenzuela
-2026-11-02,g0801,2026-11-01,past,1.39,2.66,Valenzuela
-2026-11-02,g0801,2026-11-02,forecast,1.65,8.68,Valenzuela
-2026-11-02,g0801,2026-11-03,forecast,1.99,9.79,Valenzuela
-2026-11-02,g0801,2026-11-04,forecast,1.59,7.81,Valenzuela
-2026-11-02,g0801,2026-11-05,forecast,1.33,5.17,Valenzuela
-2026-11-02,g0801,2026-11-06,forecast,1.15,4.22,Valenzuela
-2026-11-02,g0801,2026-11-07,forecast,1.01,2.85,Valenzuela
-2026-11-02,g0801,2026-11-08,forecast,0.96,2.13,Valenzuela
-2026-11-02,g0802,2026-10-26,past,0.81,0.87,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-10-27,past,1.29,2.59,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-10-28,past,1.35,1.59,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-10-29,past,1.06,1.54,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-10-30,past,0.8,6.11,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-10-31,past,0.96,1.38,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-11-01,past,0.98,1.49,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-11-02,forecast,1.07,3.53,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-11-03,forecast,1.19,4.46,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-11-04,forecast,1.03,3.61,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-11-05,forecast,0.87,2.65,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-11-06,forecast,0.8,2.4,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-11-07,forecast,0.76,1.7,"Caloocan, Valenzuela"
-2026-11-02,g0802,2026-11-08,forecast,0.74,1.39,"Caloocan, Valenzuela"
-2026-11-02,g0803,2026-10-26,past,0.17,0.19,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-10-27,past,0.22,0.34,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-10-28,past,0.39,0.41,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-10-29,past,0.27,0.32,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-10-30,past,0.15,1.56,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-10-31,past,0.18,0.23,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-11-01,past,0.22,0.29,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-11-02,forecast,0.19,0.68,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-11-03,forecast,0.3,1.61,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-11-04,forecast,0.25,1.4,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-11-05,forecast,0.16,1.06,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-11-06,forecast,0.14,0.88,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-11-07,forecast,0.14,0.59,"Caloocan, Quezon City"
-2026-11-02,g0803,2026-11-08,forecast,0.14,0.38,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-10-26,past,0.4,0.4,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-10-27,past,0.36,0.39,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-10-28,past,0.49,0.5,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-10-29,past,0.39,0.41,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-10-30,past,0.24,2.75,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-10-31,past,0.17,0.2,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-11-01,past,0.23,0.26,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-11-02,forecast,0.22,0.51,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-11-03,forecast,0.31,2.09,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-11-04,forecast,0.23,1.85,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-11-05,forecast,0.16,1.39,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-11-06,forecast,0.16,1.43,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-11-07,forecast,0.16,0.96,"Caloocan, Quezon City"
-2026-11-02,g0804,2026-11-08,forecast,0.15,0.59,"Caloocan, Quezon City"
-2026-11-02,g0903,2026-10-26,past,0.05,0.05,Caloocan
-2026-11-02,g0903,2026-10-27,past,0.06,0.07,Caloocan
-2026-11-02,g0903,2026-10-28,past,0.25,0.25,Caloocan
-2026-11-02,g0903,2026-10-29,past,0.14,0.14,Caloocan
-2026-11-02,g0903,2026-10-30,past,0.04,0.56,Caloocan
-2026-11-02,g0903,2026-10-31,past,0.04,0.04,Caloocan
-2026-11-02,g0903,2026-11-01,past,0.06,0.07,Caloocan
-2026-11-02,g0903,2026-11-02,forecast,0.04,0.04,Caloocan
-2026-11-02,g0903,2026-11-03,forecast,0.06,0.67,Caloocan
-2026-11-02,g0903,2026-11-04,forecast,0.05,0.7,Caloocan
-2026-11-02,g0903,2026-11-05,forecast,0.03,0.62,Caloocan
-2026-11-02,g0903,2026-11-06,forecast,0.03,1.04,Caloocan
-2026-11-02,g0903,2026-11-07,forecast,0.03,0.67,Caloocan
-2026-11-02,g0903,2026-11-08,forecast,0.03,0.41,Caloocan
+2026-11-03,g0003,2026-10-27,past,0.08,0.1,Muntinlupa
+2026-11-03,g0003,2026-10-28,past,0.08,0.29,Muntinlupa
+2026-11-03,g0003,2026-10-29,past,0.09,0.64,Muntinlupa
+2026-11-03,g0003,2026-10-30,past,0.06,8.25,Muntinlupa
+2026-11-03,g0003,2026-10-31,past,0.06,1.98,Muntinlupa
+2026-11-03,g0003,2026-11-01,past,0.06,0.58,Muntinlupa
+2026-11-03,g0003,2026-11-02,past,0.07,0.55,Muntinlupa
+2026-11-03,g0003,2026-11-03,forecast,0.05,0.07,Muntinlupa
+2026-11-03,g0003,2026-11-04,forecast,0.05,0.09,Muntinlupa
+2026-11-03,g0003,2026-11-05,forecast,0.05,0.09,Muntinlupa
+2026-11-03,g0003,2026-11-06,forecast,0.05,0.08,Muntinlupa
+2026-11-03,g0003,2026-11-07,forecast,0.05,2.81,Muntinlupa
+2026-11-03,g0003,2026-11-08,forecast,0.05,1.32,Muntinlupa
+2026-11-03,g0003,2026-11-09,forecast,0.05,0.69,Muntinlupa
+2026-11-03,g0102,2026-10-27,past,0.02,0.02,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-10-28,past,0.01,0.17,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-10-29,past,0.01,0.35,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-10-30,past,0.01,3.22,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-10-31,past,0.01,1.69,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-11-01,past,0.01,0.65,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-11-02,past,0.01,0.61,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-11-03,forecast,0.01,0.01,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-11-04,forecast,0.01,0.01,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-11-05,forecast,0.01,0.02,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-11-06,forecast,0.01,0.02,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-11-07,forecast,0.01,1.65,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-11-08,forecast,0.01,0.75,"Las Piñas, Muntinlupa"
+2026-11-03,g0102,2026-11-09,forecast,0.01,0.37,"Las Piñas, Muntinlupa"
+2026-11-03,g0103,2026-10-27,past,0.43,0.43,Muntinlupa
+2026-11-03,g0103,2026-10-28,past,0.0,0.01,Muntinlupa
+2026-11-03,g0103,2026-10-29,past,0.0,0.04,Muntinlupa
+2026-11-03,g0103,2026-10-30,past,0.0,1.39,Muntinlupa
+2026-11-03,g0103,2026-10-31,past,0.0,0.34,Muntinlupa
+2026-11-03,g0103,2026-11-01,past,0.0,0.05,Muntinlupa
+2026-11-03,g0103,2026-11-02,past,0.0,0.05,Muntinlupa
+2026-11-03,g0103,2026-11-03,forecast,0.0,0.0,Muntinlupa
+2026-11-03,g0103,2026-11-04,forecast,0.0,0.0,Muntinlupa
+2026-11-03,g0103,2026-11-05,forecast,0.0,0.0,Muntinlupa
+2026-11-03,g0103,2026-11-06,forecast,0.0,0.0,Muntinlupa
+2026-11-03,g0103,2026-11-07,forecast,0.0,0.37,Muntinlupa
+2026-11-03,g0103,2026-11-08,forecast,0.0,0.92,Muntinlupa
+2026-11-03,g0103,2026-11-09,forecast,0.0,0.68,Muntinlupa
+2026-11-03,g0201,2026-10-27,past,0.42,0.63,Las Piñas
+2026-11-03,g0201,2026-10-28,past,0.49,0.94,Las Piñas
+2026-11-03,g0201,2026-10-29,past,0.43,1.0,Las Piñas
+2026-11-03,g0201,2026-10-30,past,0.44,2.08,Las Piñas
+2026-11-03,g0201,2026-10-31,past,0.52,1.56,Las Piñas
+2026-11-03,g0201,2026-11-01,past,0.53,1.28,Las Piñas
+2026-11-03,g0201,2026-11-02,past,0.64,1.1,Las Piñas
+2026-11-03,g0201,2026-11-03,forecast,0.38,0.54,Las Piñas
+2026-11-03,g0201,2026-11-04,forecast,0.32,0.58,Las Piñas
+2026-11-03,g0201,2026-11-05,forecast,0.3,0.45,Las Piñas
+2026-11-03,g0201,2026-11-06,forecast,0.26,0.35,Las Piñas
+2026-11-03,g0201,2026-11-07,forecast,0.23,1.44,Las Piñas
+2026-11-03,g0201,2026-11-08,forecast,0.22,0.8,Las Piñas
+2026-11-03,g0201,2026-11-09,forecast,0.2,0.55,Las Piñas
+2026-11-03,g0202,2026-10-27,past,0.02,0.02,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-10-28,past,0.01,0.17,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-10-29,past,0.01,0.35,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-10-30,past,0.01,3.22,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-10-31,past,0.01,1.69,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-11-01,past,0.01,0.65,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-11-02,past,0.01,0.61,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-11-03,forecast,0.01,0.01,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-11-04,forecast,0.01,0.01,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-11-05,forecast,0.01,0.02,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-11-06,forecast,0.01,0.02,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-11-07,forecast,0.01,1.65,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-11-08,forecast,0.01,0.75,"Las Piñas, Parañaque"
+2026-11-03,g0202,2026-11-09,forecast,0.01,0.37,"Las Piñas, Parañaque"
+2026-11-03,g0203,2026-10-27,past,0.43,0.43,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-10-28,past,0.0,0.01,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-10-29,past,0.0,0.04,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-10-30,past,0.0,1.39,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-10-31,past,0.0,0.34,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-11-01,past,0.0,0.05,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-11-02,past,0.0,0.05,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-11-03,forecast,0.0,0.0,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-11-04,forecast,0.0,0.0,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-11-05,forecast,0.0,0.0,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-11-06,forecast,0.0,0.0,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-11-07,forecast,0.0,0.37,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-11-08,forecast,0.0,0.92,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0203,2026-11-09,forecast,0.0,0.68,"Muntinlupa, Parañaque, Taguig"
+2026-11-03,g0302,2026-10-27,past,0.33,0.48,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-10-28,past,0.23,0.3,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-10-29,past,0.17,0.31,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-10-30,past,0.07,0.64,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-10-31,past,0.11,0.3,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-11-01,past,0.09,0.29,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-11-02,past,0.12,0.35,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-11-03,forecast,0.08,0.1,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-11-04,forecast,0.08,0.31,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-11-05,forecast,0.07,0.58,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-11-06,forecast,0.05,0.63,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-11-07,forecast,0.05,0.56,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-11-08,forecast,0.05,0.65,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0302,2026-11-09,forecast,0.05,0.8,"Las Piñas, Parañaque, Pasay City"
+2026-11-03,g0303,2026-10-27,past,4.74,7.53,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-10-28,past,3.21,4.93,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-10-29,past,3.05,5.84,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-10-30,past,1.78,32.11,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-10-31,past,2.26,8.64,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-11-01,past,2.72,8.25,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-11-02,past,3.03,17.2,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-11-03,forecast,2.2,3.1,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-11-04,forecast,2.29,10.56,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-11-05,forecast,1.62,12.06,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-11-06,forecast,1.25,11.22,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-11-07,forecast,1.19,7.69,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-11-08,forecast,1.17,10.25,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0303,2026-11-09,forecast,1.34,9.4,"Parañaque, Pasay City, Taguig"
+2026-11-03,g0304,2026-10-27,past,0.21,0.49,Taguig
+2026-11-03,g0304,2026-10-28,past,0.24,0.48,Taguig
+2026-11-03,g0304,2026-10-29,past,0.21,0.69,Taguig
+2026-11-03,g0304,2026-10-30,past,0.15,1.19,Taguig
+2026-11-03,g0304,2026-10-31,past,0.16,0.77,Taguig
+2026-11-03,g0304,2026-11-01,past,0.22,0.87,Taguig
+2026-11-03,g0304,2026-11-02,past,0.36,0.76,Taguig
+2026-11-03,g0304,2026-11-03,forecast,0.26,0.36,Taguig
+2026-11-03,g0304,2026-11-04,forecast,0.18,0.97,Taguig
+2026-11-03,g0304,2026-11-05,forecast,0.15,0.85,Taguig
+2026-11-03,g0304,2026-11-06,forecast,0.14,0.51,Taguig
+2026-11-03,g0304,2026-11-07,forecast,0.14,1.13,Taguig
+2026-11-03,g0304,2026-11-08,forecast,0.13,0.99,Taguig
+2026-11-03,g0304,2026-11-09,forecast,0.13,0.68,Taguig
+2026-11-03,g0402,2026-10-27,past,4.32,6.89,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-10-28,past,2.67,4.26,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-10-29,past,2.59,5.14,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-10-30,past,1.49,29.55,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-10-31,past,1.91,8.18,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-11-01,past,2.23,7.61,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-11-02,past,2.39,15.63,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-11-03,forecast,1.74,2.52,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-11-04,forecast,1.9,9.84,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-11-05,forecast,1.33,10.89,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-11-06,forecast,1.02,10.27,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-11-07,forecast,0.98,7.04,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-11-08,forecast,0.96,11.39,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0402,2026-11-09,forecast,1.12,10.75,"Makati, Manila, Parañaque, Pasay City"
+2026-11-03,g0403,2026-10-27,past,4.57,7.45,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-10-28,past,3.51,5.05,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-10-29,past,3.25,5.05,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-10-30,past,2.16,30.41,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-10-31,past,2.66,7.57,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-11-01,past,3.07,6.62,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-11-02,past,3.15,16.02,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-11-03,forecast,2.36,3.26,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-11-04,forecast,2.5,8.68,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-11-05,forecast,1.85,11.02,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-11-06,forecast,1.48,10.64,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-11-07,forecast,1.4,7.36,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-11-08,forecast,1.39,6.31,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0403,2026-11-09,forecast,1.62,7.51,"Makati, Mandaluyong, Pasig, Pateros, Taguig"
+2026-11-03,g0404,2026-10-27,past,0.58,1.04,"Pasig, Taguig"
+2026-11-03,g0404,2026-10-28,past,0.53,0.96,"Pasig, Taguig"
+2026-11-03,g0404,2026-10-29,past,0.52,1.13,"Pasig, Taguig"
+2026-11-03,g0404,2026-10-30,past,0.51,3.2,"Pasig, Taguig"
+2026-11-03,g0404,2026-10-31,past,0.53,1.64,"Pasig, Taguig"
+2026-11-03,g0404,2026-11-01,past,0.72,1.56,"Pasig, Taguig"
+2026-11-03,g0404,2026-11-02,past,0.7,2.57,"Pasig, Taguig"
+2026-11-03,g0404,2026-11-03,forecast,0.52,0.73,"Pasig, Taguig"
+2026-11-03,g0404,2026-11-04,forecast,0.51,2.03,"Pasig, Taguig"
+2026-11-03,g0404,2026-11-05,forecast,0.5,1.34,"Pasig, Taguig"
+2026-11-03,g0404,2026-11-06,forecast,0.49,0.91,"Pasig, Taguig"
+2026-11-03,g0404,2026-11-07,forecast,0.49,2.05,"Pasig, Taguig"
+2026-11-03,g0404,2026-11-08,forecast,0.49,1.37,"Pasig, Taguig"
+2026-11-03,g0404,2026-11-09,forecast,0.51,1.09,"Pasig, Taguig"
+2026-11-03,g0501,2026-10-27,past,9.09,16.26,Manila
+2026-11-03,g0501,2026-10-28,past,6.83,9.94,Manila
+2026-11-03,g0501,2026-10-29,past,5.98,10.07,Manila
+2026-11-03,g0501,2026-10-30,past,4.25,45.13,Manila
+2026-11-03,g0501,2026-10-31,past,6.21,16.74,Manila
+2026-11-03,g0501,2026-11-01,past,6.31,13.42,Manila
+2026-11-03,g0501,2026-11-02,past,6.64,24.7,Manila
+2026-11-03,g0501,2026-11-03,forecast,4.52,5.64,Manila
+2026-11-03,g0501,2026-11-04,forecast,4.73,16.1,Manila
+2026-11-03,g0501,2026-11-05,forecast,4.01,19.37,Manila
+2026-11-03,g0501,2026-11-06,forecast,3.17,16.58,Manila
+2026-11-03,g0501,2026-11-07,forecast,2.92,12.34,Manila
+2026-11-03,g0501,2026-11-08,forecast,2.85,16.91,Manila
+2026-11-03,g0501,2026-11-09,forecast,3.24,16.7,Manila
+2026-11-03,g0502,2026-10-27,past,4.32,6.89,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-10-28,past,2.67,4.26,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-10-29,past,2.59,5.14,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-10-30,past,1.49,29.55,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-10-31,past,1.91,8.18,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-11-01,past,2.23,7.61,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-11-02,past,2.39,15.63,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-11-03,forecast,1.74,2.52,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-11-04,forecast,1.9,9.84,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-11-05,forecast,1.33,10.89,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-11-06,forecast,1.02,10.27,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-11-07,forecast,0.98,7.04,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-11-08,forecast,0.96,11.39,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0502,2026-11-09,forecast,1.12,10.75,"Makati, Mandaluyong, Manila, Quezon City, San Juan"
+2026-11-03,g0503,2026-10-27,past,4.57,7.45,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-10-28,past,3.51,5.05,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-10-29,past,3.25,5.05,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-10-30,past,2.16,30.41,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-10-31,past,2.66,7.57,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-11-01,past,3.07,6.62,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-11-02,past,3.15,16.02,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-11-03,forecast,2.36,3.26,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-11-04,forecast,2.5,8.68,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-11-05,forecast,1.85,11.02,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-11-06,forecast,1.48,10.64,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-11-07,forecast,1.4,7.36,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-11-08,forecast,1.39,6.31,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0503,2026-11-09,forecast,1.62,7.51,"Mandaluyong, Pasig, Quezon City, San Juan"
+2026-11-03,g0504,2026-10-27,past,0.58,1.04,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-10-28,past,0.53,0.96,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-10-29,past,0.52,1.13,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-10-30,past,0.51,3.2,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-10-31,past,0.53,1.64,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-11-01,past,0.72,1.56,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-11-02,past,0.7,2.57,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-11-03,forecast,0.52,0.73,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-11-04,forecast,0.51,2.03,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-11-05,forecast,0.5,1.34,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-11-06,forecast,0.49,0.91,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-11-07,forecast,0.49,2.05,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-11-08,forecast,0.49,1.37,"Marikina, Pasig, Quezon City"
+2026-11-03,g0504,2026-11-09,forecast,0.51,1.09,"Marikina, Pasig, Quezon City"
+2026-11-03,g0601,2026-10-27,past,1.2,6.62,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-10-28,past,1.24,1.94,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-10-29,past,1.02,3.75,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-10-30,past,1.01,15.26,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-10-31,past,1.67,2.74,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-11-01,past,1.75,2.42,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-11-02,past,1.91,8.14,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-11-03,forecast,1.33,1.91,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-11-04,forecast,1.05,3.37,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-11-05,forecast,0.91,3.16,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-11-06,forecast,0.8,2.14,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-11-07,forecast,0.74,1.44,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-11-08,forecast,0.72,1.47,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0601,2026-11-09,forecast,0.73,1.43,"Caloocan, Malabon, Manila, Navotas"
+2026-11-03,g0602,2026-10-27,past,0.98,3.19,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-10-28,past,0.95,1.56,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-10-29,past,0.87,1.65,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-10-30,past,0.91,7.36,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-10-31,past,1.24,2.39,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-11-01,past,1.39,2.04,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-11-02,past,1.23,4.57,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-11-03,forecast,0.79,1.13,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-11-04,forecast,0.74,2.33,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-11-05,forecast,0.67,1.62,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-11-06,forecast,0.63,1.23,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-11-07,forecast,0.62,1.46,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-11-08,forecast,0.61,1.38,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0602,2026-11-09,forecast,0.73,1.08,"Caloocan, Malabon, Manila, Quezon City"
+2026-11-03,g0603,2026-10-27,past,2.85,4.57,Quezon City
+2026-11-03,g0603,2026-10-28,past,2.47,3.06,Quezon City
+2026-11-03,g0603,2026-10-29,past,2.29,3.01,Quezon City
+2026-11-03,g0603,2026-10-30,past,1.48,23.43,Quezon City
+2026-11-03,g0603,2026-10-31,past,1.54,3.68,Quezon City
+2026-11-03,g0603,2026-11-01,past,1.86,2.97,Quezon City
+2026-11-03,g0603,2026-11-02,past,2.18,10.17,Quezon City
+2026-11-03,g0603,2026-11-03,forecast,1.84,2.39,Quezon City
+2026-11-03,g0603,2026-11-04,forecast,1.6,3.82,Quezon City
+2026-11-03,g0603,2026-11-05,forecast,1.08,8.14,Quezon City
+2026-11-03,g0603,2026-11-06,forecast,0.88,7.45,Quezon City
+2026-11-03,g0603,2026-11-07,forecast,0.84,4.82,Quezon City
+2026-11-03,g0603,2026-11-08,forecast,0.82,3.54,Quezon City
+2026-11-03,g0603,2026-11-09,forecast,0.98,4.68,Quezon City
+2026-11-03,g0604,2026-10-27,past,0.07,0.09,"Marikina, Quezon City"
+2026-11-03,g0604,2026-10-28,past,0.14,0.15,"Marikina, Quezon City"
+2026-11-03,g0604,2026-10-29,past,0.1,0.11,"Marikina, Quezon City"
+2026-11-03,g0604,2026-10-30,past,0.04,1.84,"Marikina, Quezon City"
+2026-11-03,g0604,2026-10-31,past,0.06,0.13,"Marikina, Quezon City"
+2026-11-03,g0604,2026-11-01,past,0.12,0.15,"Marikina, Quezon City"
+2026-11-03,g0604,2026-11-02,past,0.15,0.86,"Marikina, Quezon City"
+2026-11-03,g0604,2026-11-03,forecast,0.2,0.21,"Marikina, Quezon City"
+2026-11-03,g0604,2026-11-04,forecast,0.1,0.31,"Marikina, Quezon City"
+2026-11-03,g0604,2026-11-05,forecast,0.05,0.69,"Marikina, Quezon City"
+2026-11-03,g0604,2026-11-06,forecast,0.04,0.45,"Marikina, Quezon City"
+2026-11-03,g0604,2026-11-07,forecast,0.04,0.3,"Marikina, Quezon City"
+2026-11-03,g0604,2026-11-08,forecast,0.04,0.29,"Marikina, Quezon City"
+2026-11-03,g0604,2026-11-09,forecast,0.04,0.23,"Marikina, Quezon City"
+2026-11-03,g0605,2026-10-27,past,0.07,0.09,Marikina
+2026-11-03,g0605,2026-10-28,past,0.14,0.15,Marikina
+2026-11-03,g0605,2026-10-29,past,0.1,0.11,Marikina
+2026-11-03,g0605,2026-10-30,past,0.04,1.84,Marikina
+2026-11-03,g0605,2026-10-31,past,0.06,0.13,Marikina
+2026-11-03,g0605,2026-11-01,past,0.12,0.15,Marikina
+2026-11-03,g0605,2026-11-02,past,0.15,0.86,Marikina
+2026-11-03,g0605,2026-11-03,forecast,0.2,0.21,Marikina
+2026-11-03,g0605,2026-11-04,forecast,0.1,0.31,Marikina
+2026-11-03,g0605,2026-11-05,forecast,0.05,0.69,Marikina
+2026-11-03,g0605,2026-11-06,forecast,0.04,0.45,Marikina
+2026-11-03,g0605,2026-11-07,forecast,0.04,0.3,Marikina
+2026-11-03,g0605,2026-11-08,forecast,0.04,0.29,Marikina
+2026-11-03,g0605,2026-11-09,forecast,0.04,0.23,Marikina
+2026-11-03,g0700,2026-10-27,past,0.0,0.05,Navotas
+2026-11-03,g0700,2026-10-28,past,0.0,0.01,Navotas
+2026-11-03,g0700,2026-10-29,past,0.0,0.06,Navotas
+2026-11-03,g0700,2026-10-30,past,0.0,0.24,Navotas
+2026-11-03,g0700,2026-10-31,past,0.01,0.03,Navotas
+2026-11-03,g0700,2026-11-01,past,0.01,0.01,Navotas
+2026-11-03,g0700,2026-11-02,past,0.01,0.06,Navotas
+2026-11-03,g0700,2026-11-03,forecast,0.01,0.01,Navotas
+2026-11-03,g0700,2026-11-04,forecast,0.01,0.03,Navotas
+2026-11-03,g0700,2026-11-05,forecast,0.01,0.04,Navotas
+2026-11-03,g0700,2026-11-06,forecast,0.01,0.02,Navotas
+2026-11-03,g0700,2026-11-07,forecast,0.0,0.01,Navotas
+2026-11-03,g0700,2026-11-08,forecast,0.0,0.02,Navotas
+2026-11-03,g0700,2026-11-09,forecast,0.0,0.02,Navotas
+2026-11-03,g0701,2026-10-27,past,1.2,6.62,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-10-28,past,1.24,1.94,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-10-29,past,1.02,3.75,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-10-30,past,1.01,15.26,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-10-31,past,1.67,2.74,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-11-01,past,1.75,2.42,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-11-02,past,1.91,8.14,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-11-03,forecast,1.33,1.91,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-11-04,forecast,1.05,3.37,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-11-05,forecast,0.91,3.16,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-11-06,forecast,0.8,2.14,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-11-07,forecast,0.74,1.44,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-11-08,forecast,0.72,1.47,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0701,2026-11-09,forecast,0.73,1.43,"Malabon, Navotas, Valenzuela"
+2026-11-03,g0702,2026-10-27,past,0.98,3.19,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-10-28,past,0.95,1.56,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-10-29,past,0.87,1.65,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-10-30,past,0.91,7.36,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-10-31,past,1.24,2.39,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-11-01,past,1.39,2.04,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-11-02,past,1.23,4.57,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-11-03,forecast,0.79,1.13,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-11-04,forecast,0.74,2.33,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-11-05,forecast,0.67,1.62,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-11-06,forecast,0.63,1.23,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-11-07,forecast,0.62,1.46,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-11-08,forecast,0.61,1.38,"Caloocan, Valenzuela"
+2026-11-03,g0702,2026-11-09,forecast,0.73,1.08,"Caloocan, Valenzuela"
+2026-11-03,g0703,2026-10-27,past,2.85,4.57,Quezon City
+2026-11-03,g0703,2026-10-28,past,2.47,3.06,Quezon City
+2026-11-03,g0703,2026-10-29,past,2.29,3.01,Quezon City
+2026-11-03,g0703,2026-10-30,past,1.48,23.43,Quezon City
+2026-11-03,g0703,2026-10-31,past,1.54,3.68,Quezon City
+2026-11-03,g0703,2026-11-01,past,1.86,2.97,Quezon City
+2026-11-03,g0703,2026-11-02,past,2.18,10.17,Quezon City
+2026-11-03,g0703,2026-11-03,forecast,1.84,2.39,Quezon City
+2026-11-03,g0703,2026-11-04,forecast,1.6,3.82,Quezon City
+2026-11-03,g0703,2026-11-05,forecast,1.08,8.14,Quezon City
+2026-11-03,g0703,2026-11-06,forecast,0.88,7.45,Quezon City
+2026-11-03,g0703,2026-11-07,forecast,0.84,4.82,Quezon City
+2026-11-03,g0703,2026-11-08,forecast,0.82,3.54,Quezon City
+2026-11-03,g0703,2026-11-09,forecast,0.98,4.68,Quezon City
+2026-11-03,g0704,2026-10-27,past,0.07,0.09,Quezon City
+2026-11-03,g0704,2026-10-28,past,0.14,0.15,Quezon City
+2026-11-03,g0704,2026-10-29,past,0.1,0.11,Quezon City
+2026-11-03,g0704,2026-10-30,past,0.04,1.84,Quezon City
+2026-11-03,g0704,2026-10-31,past,0.06,0.13,Quezon City
+2026-11-03,g0704,2026-11-01,past,0.12,0.15,Quezon City
+2026-11-03,g0704,2026-11-02,past,0.15,0.86,Quezon City
+2026-11-03,g0704,2026-11-03,forecast,0.2,0.21,Quezon City
+2026-11-03,g0704,2026-11-04,forecast,0.1,0.31,Quezon City
+2026-11-03,g0704,2026-11-05,forecast,0.05,0.69,Quezon City
+2026-11-03,g0704,2026-11-06,forecast,0.04,0.45,Quezon City
+2026-11-03,g0704,2026-11-07,forecast,0.04,0.3,Quezon City
+2026-11-03,g0704,2026-11-08,forecast,0.04,0.29,Quezon City
+2026-11-03,g0704,2026-11-09,forecast,0.04,0.23,Quezon City
+2026-11-03,g0801,2026-10-27,past,1.97,7.05,Valenzuela
+2026-11-03,g0801,2026-10-28,past,1.89,2.52,Valenzuela
+2026-11-03,g0801,2026-10-29,past,1.42,4.52,Valenzuela
+2026-11-03,g0801,2026-10-30,past,1.24,13.96,Valenzuela
+2026-11-03,g0801,2026-10-31,past,1.62,3.23,Valenzuela
+2026-11-03,g0801,2026-11-01,past,1.39,2.66,Valenzuela
+2026-11-03,g0801,2026-11-02,past,1.65,8.68,Valenzuela
+2026-11-03,g0801,2026-11-03,forecast,1.65,3.09,Valenzuela
+2026-11-03,g0801,2026-11-04,forecast,1.36,4.52,Valenzuela
+2026-11-03,g0801,2026-11-05,forecast,1.12,3.42,Valenzuela
+2026-11-03,g0801,2026-11-06,forecast,0.96,2.21,Valenzuela
+2026-11-03,g0801,2026-11-07,forecast,0.91,1.51,Valenzuela
+2026-11-03,g0801,2026-11-08,forecast,0.89,1.34,Valenzuela
+2026-11-03,g0801,2026-11-09,forecast,0.87,1.94,Valenzuela
+2026-11-03,g0802,2026-10-27,past,1.29,2.59,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-10-28,past,1.35,1.59,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-10-29,past,1.06,1.54,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-10-30,past,0.8,6.11,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-10-31,past,0.96,1.38,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-11-01,past,0.98,1.49,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-11-02,past,1.07,3.53,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-11-03,forecast,1.02,1.74,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-11-04,forecast,0.84,1.68,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-11-05,forecast,0.75,1.43,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-11-06,forecast,0.72,1.06,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-11-07,forecast,0.7,0.83,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-11-08,forecast,0.7,0.87,"Caloocan, Valenzuela"
+2026-11-03,g0802,2026-11-09,forecast,0.69,1.12,"Caloocan, Valenzuela"
+2026-11-03,g0803,2026-10-27,past,0.22,0.34,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-10-28,past,0.39,0.41,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-10-29,past,0.27,0.32,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-10-30,past,0.15,1.56,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-10-31,past,0.18,0.23,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-11-01,past,0.22,0.29,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-11-02,past,0.19,0.68,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-11-03,forecast,0.26,0.34,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-11-04,forecast,0.17,0.56,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-11-05,forecast,0.14,0.41,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-11-06,forecast,0.14,0.26,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-11-07,forecast,0.13,0.19,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-11-08,forecast,0.13,0.16,"Caloocan, Quezon City"
+2026-11-03,g0803,2026-11-09,forecast,0.13,0.27,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-10-27,past,0.36,0.39,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-10-28,past,0.49,0.5,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-10-29,past,0.39,0.41,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-10-30,past,0.24,2.75,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-10-31,past,0.17,0.2,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-11-01,past,0.23,0.26,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-11-02,past,0.22,0.51,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-11-03,forecast,0.25,0.28,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-11-04,forecast,0.16,0.63,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-11-05,forecast,0.15,0.75,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-11-06,forecast,0.14,0.49,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-11-07,forecast,0.14,0.31,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-11-08,forecast,0.14,0.23,"Caloocan, Quezon City"
+2026-11-03,g0804,2026-11-09,forecast,0.15,0.62,"Caloocan, Quezon City"
+2026-11-03,g0903,2026-10-27,past,0.06,0.07,Caloocan
+2026-11-03,g0903,2026-10-28,past,0.25,0.25,Caloocan
+2026-11-03,g0903,2026-10-29,past,0.14,0.14,Caloocan
+2026-11-03,g0903,2026-10-30,past,0.04,0.56,Caloocan
+2026-11-03,g0903,2026-10-31,past,0.04,0.04,Caloocan
+2026-11-03,g0903,2026-11-01,past,0.06,0.07,Caloocan
+2026-11-03,g0903,2026-11-02,past,0.04,0.04,Caloocan
+2026-11-03,g0903,2026-11-03,forecast,0.06,0.07,Caloocan
+2026-11-03,g0903,2026-11-04,forecast,0.03,0.41,Caloocan
+2026-11-03,g0903,2026-11-05,forecast,0.03,0.24,Caloocan
+2026-11-03,g0903,2026-11-06,forecast,0.03,0.1,Caloocan
+2026-11-03,g0903,2026-11-07,forecast,0.03,0.05,Caloocan
+2026-11-03,g0903,2026-11-08,forecast,0.03,0.03,Caloocan
+2026-11-03,g0903,2026-11-09,forecast,0.03,0.19,Caloocan
